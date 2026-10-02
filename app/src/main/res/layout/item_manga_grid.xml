@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- App-wide manga card (Material 3 Expressive). The cover rounds itself (no MaterialCardView
+     wrapper, so Coil's CoverSizeResolver measures it reliably). The title is either overlaid on a
+     dark-accent scrim inside the cover (textView_title_overlay) or shown below it (textView_title),
+     toggled by the "title over cover" setting. The cover's top corners (saved/favourite pill,
+     pin, progress, new-chapters counter) come from layout_cover_corners. Root width, the overlay
+     title appearance and the pill size are set by ItemSizeResolver; the scrim is set in the adapter. -->
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="@dimen/grid_spacing_outer"
+	android:background="@drawable/bg_frosted_item"
+	android:clipChildren="false"
+	android:orientation="vertical"
+	tools:layout_width="140dp">
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:duplicateParentState="true"
+		android:foreground="?attr/selectableItemBackground">
+
+		<org.koitharu.kotatsu.image.ui.CoverImageView
+			android:id="@+id/imageView_cover"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="?attr/colorSurfaceContainer"
+			app:allowRgb565="true"
+			app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Kotatsu.Cover.Large"
+			tools:ignore="ContentDescription"
+			tools:src="@tools:sample/backgrounds/scenic[5]" />
+
+		<View
+			android:id="@+id/view_scrim"
+			android:layout_width="match_parent"
+			android:layout_height="72dp"
+			android:layout_gravity="bottom"
+			tools:background="#CC000000" />
+
+		<TextView
+			android:id="@+id/textView_title_overlay"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom|start"
+			android:layout_marginStart="12dp"
+			android:layout_marginEnd="12dp"
+			android:layout_marginBottom="8dp"
+			android:elegantTextHeight="false"
+			android:ellipsize="end"
+			android:maxLines="2"
+			android:textAppearance="@style/TextAppearance.Kotatsu.GridTitle.Overlay"
+			tools:text="@tools:sample/lorem" />
+
+		<include
+			android:id="@+id/corners"
+			layout="@layout/layout_cover_corners"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="top" />
+
+	</FrameLayout>
+
+	<TextView
+		android:id="@+id/textView_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:elegantTextHeight="false"
+		android:ellipsize="end"
+		android:maxLines="2"
+		android:paddingHorizontal="2dp"
+		android:paddingVertical="6dp"
+		android:textAppearance="@style/TextAppearance.Kotatsu.GridTitle"
+		android:textColor="?android:attr/textColorPrimary"
+		tools:text="@tools:sample/lorem" />
+
+</LinearLayout>

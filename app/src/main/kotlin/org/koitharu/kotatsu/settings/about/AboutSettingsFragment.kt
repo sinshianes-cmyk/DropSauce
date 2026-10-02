@@ -1,0 +1,609 @@
+package org.koitharu.kotatsu.settings.about
+
+import android.content.Intent
+import android.net.Uri
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.annotation.StringRes
+import android.graphics.Matrix
+import androidx.compose.animation.core.FastOutSlowInEasing
+import androidx.compose.animation.core.LinearEasing
+import androidx.compose.animation.core.RepeatMode
+import androidx.compose.animation.core.EaseInOut
+import androidx.compose.animation.core.InfiniteTransition
+import androidx.compose.animation.core.animateFloat
+import androidx.compose.animation.core.infiniteRepeatable
+import androidx.compose.animation.core.rememberInfiniteTransition
+import androidx.compose.animation.core.tween
+import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Path
+import androidx.compose.ui.graphics.drawscope.DrawScope
+import androidx.compose.ui.graphics.drawscope.withTransform
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
+import org.koitharu.kotatsu.main.ui.nav.rememberAnyDrawablePainter
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.getValue
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.ComposeView
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.ViewCompositionStrategy
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
+import androidx.graphics.shapes.CornerRounding
+import androidx.graphics.shapes.Cubic
+import androidx.graphics.shapes.Morph
+import androidx.graphics.shapes.RoundedPolygon
+import androidx.graphics.shapes.rectangle
+import androidx.graphics.shapes.transformed
+import androidx.fragment.app.viewModels
+import com.google.android.material.snackbar.Snackbar
+import dagger.hilt.android.AndroidEntryPoint
+import org.koitharu.kotatsu.BuildConfig
+import org.koitharu.kotatsu.R
+import org.koitharu.kotatsu.core.github.AppVersion
+import org.koitharu.kotatsu.core.nav.router
+import org.koitharu.kotatsu.core.util.ext.observeEvent
+import org.koitharu.kotatsu.settings.SettingsActivity
+import org.koitharu.kotatsu.settings.about.changelog.ChangelogFragment
+import org.koitharu.kotatsu.settings.compose.ActionSettingsItem
+import org.koitharu.kotatsu.settings.compose.BaseComposeSettingsFragment
+import org.koitharu.kotatsu.settings.compose.DropSauceTheme
+import org.koitharu.kotatsu.settings.compose.SettingsGroup
+import org.koitharu.kotatsu.settings.compose.SettingsScaffold
+import org.koitharu.kotatsu.settings.compose.SwitchSettingsItem
+import org.koitharu.kotatsu.settings.developer.DeveloperToolsFragment
+import kotlin.math.PI
+import kotlin.math.atan2
+import kotlin.math.cos
+import kotlin.math.hypot
+import kotlin.math.sin
+
+@AndroidEntryPoint
+class AboutSettingsFragment : BaseComposeSettingsFragment(R.string.about) {
+
+	private val viewModel by viewModels<AboutSettingsViewModel>()
+
+	private var pendingLogContent: String? = null
+
+	private val saveLogLauncher = registerForActivityResult(
+		ActivityResultContracts.CreateDocument("text/plain"),
+	) { uri: Uri? ->
+		val content = pendingLogContent ?: return@registerForActivityResult
+		pendingLogContent = null
+		if (uri == null) return@registerForActivityResult
+		try {
+			requireContext().contentResolver.openOutputStream(uri)?.use { output ->
+				output.write(content.toByteArray(Charsets.UTF_8))
+			}
+		} catch (_: Exception) {
+			Snackbar.make(requireView(), R.string.error_occurred, Snackbar.LENGTH_SHORT).show()
+		}
+	}
+
+	override fun onCreateView(
+		inflater: LayoutInflater,
+		container: ViewGroup?,
+		savedInstanceState: Bundle?,
+	): View = ComposeView(requireContext()).apply {
+		setViewCompositionStrategy(ViewCompositionStrategy.DisposeOnViewTreeLifecycleDestroyed)
+		setContent {
+			DropSauceTheme {
+				val isUpdateSupported by viewModel.isUpdateSupported.collectAsState()
+				val isLoading by viewModel.isLoading.collectAsState()
+				val isVerboseLogging by viewModel.isVerboseLogging.collectAsState()
+				AboutScreen(
+					appVersion = BuildConfig.VERSION_NAME,
+					checkUpdatesEnabled = isUpdateSupported && !isLoading,
+					isVerboseLogging = isVerboseLogging,
+					onCheckUpdates = viewModel::checkForUpdates,
+					onChangelog = ::openChangelog,
+					onOpenLink = ::openLink,
+					onVerboseLoggingToggle = viewModel::setVerboseLogging,
+					onOpenDeveloperTools = ::openDeveloperTools,
+				)
+			}
+		}
+	}
+
+	override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+		super.onViewCreated(view, savedInstanceState)
+		viewModel.onUpdateAvailable.observeEvent(viewLifecycleOwner, ::onUpdateAvailable)
+		viewModel.onExportLog.observeEvent(viewLifecycleOwner) { content ->
+			pendingLogContent = content
+			saveLogLauncher.launch("dropsauce_log_${System.currentTimeMillis()}.txt")
+		}
+	}
+
+	private fun openChangelog() {
+		(activity as? SettingsActivity)?.openFragment(
+			ChangelogFragment::class.java,
+			null,
+			isFromRoot = false,
+		)
+	}
+
+	private fun openDeveloperTools() {
+		(activity as? SettingsActivity)?.openFragment(
+			DeveloperToolsFragment::class.java,
+			null,
+			isFromRoot = false,
+		)
+	}
+
+	private fun openLink(@StringRes urlRes: Int, titleRes: Int) {
+		val opened = router.openExternalBrowser(getString(urlRes), getString(titleRes))
+		if (!opened) {
+			Snackbar.make(
+				requireView(),
+				R.string.operation_not_supported,
+				Snackbar.LENGTH_SHORT,
+			).show()
+		}
+	}
+
+	private fun onUpdateAvailable(version: AppVersion?) {
+		if (version == null) {
+			Snackbar.make(requireView(), R.string.no_update_available, Snackbar.LENGTH_SHORT).show()
+		} else {
+			startActivity(Intent(requireContext(), AppUpdateActivity::class.java))
+		}
+	}
+}
+
+@Composable
+private fun AboutScreen(
+	appVersion: String,
+	checkUpdatesEnabled: Boolean,
+	isVerboseLogging: Boolean,
+	onCheckUpdates: () -> Unit,
+	onChangelog: () -> Unit,
+	onOpenLink: (urlRes: Int, titleRes: Int) -> Unit,
+	onVerboseLoggingToggle: (Boolean) -> Unit,
+	onOpenDeveloperTools: () -> Unit,
+) {
+	val ctx = LocalContext.current
+	SettingsScaffold {
+		// Hero header: app icon + name + version chip — gives the About screen a sense of place
+		// instead of being just another list of links.
+		item { AboutHero(appVersion = appVersion) }
+		item { Spacer(Modifier.height(16.dp).fillMaxWidth()) }
+		item {
+			SettingsGroup(title = "Updates") {
+				item { pos ->
+					ActionSettingsItem(
+						title = stringResource(R.string.check_for_updates),
+						subtitle = ctx.getString(R.string.app_version, appVersion),
+						icon = R.drawable.ic_app_update,
+						shape = pos.shape,
+						enabled = checkUpdatesEnabled,
+						onClick = onCheckUpdates,
+					)
+				}
+				item { pos ->
+					ActionSettingsItem(
+						title = stringResource(R.string.changelog),
+						subtitle = stringResource(R.string.changelog_summary),
+						icon = R.drawable.ic_history,
+						shape = pos.shape,
+						onClick = onChangelog,
+					)
+				}
+			}
+		}
+		item { Spacer(Modifier.height(8.dp).fillMaxWidth()) }
+		item {
+			SettingsGroup(title = "Links") {
+				item { pos ->
+					ActionSettingsItem(
+						title = stringResource(R.string.user_manual),
+						subtitle = stringResource(R.string.url_user_manual),
+						icon = R.drawable.ic_book_page,
+						shape = pos.shape,
+						onClick = { onOpenLink(R.string.url_user_manual, R.string.user_manual) },
+					)
+				}
+				item { pos ->
+					ActionSettingsItem(
+						title = stringResource(R.string.source_code),
+						subtitle = stringResource(R.string.url_github),
+						icon = R.drawable.ic_open_external,
+						shape = pos.shape,
+						onClick = { onOpenLink(R.string.url_github, R.string.source_code) },
+					)
+				}
+				item { pos ->
+					ActionSettingsItem(
+						title = stringResource(R.string.discord),
+						subtitle = stringResource(R.string.url_discord_web),
+						icon = R.drawable.ic_discord,
+						shape = pos.shape,
+						onClick = { onOpenLink(R.string.url_discord_web, R.string.discord) },
+					)
+				}
+			}
+		}
+		item { Spacer(Modifier.height(8.dp).fillMaxWidth()) }
+		item {
+			SettingsGroup(title = "Diagnostics") {
+				item { pos ->
+					SwitchSettingsItem(
+						title = "Verbose logging",
+						subtitle = if (isVerboseLogging) {
+							"Recording — turn off to save log as .txt"
+						} else {
+							"Off by default to preserve performance"
+						},
+						icon = R.drawable.ic_script,
+						shape = pos.shape,
+						checked = isVerboseLogging,
+						onCheckedChange = onVerboseLoggingToggle,
+					)
+				}
+				item { pos ->
+					ActionSettingsItem(
+						title = stringResource(R.string.developer_testing_tools),
+						subtitle = stringResource(R.string.developer_testing_tools_summary),
+						icon = R.drawable.ic_timer_run,
+						shape = pos.shape,
+						onClick = onOpenDeveloperTools,
+					)
+				}
+			}
+		}
+		item { Spacer(Modifier.height(24.dp).fillMaxWidth()) }
+	}
+}
+
+@Composable
+private fun AboutHero(appVersion: String) {
+	val cs = MaterialTheme.colorScheme
+	val decorColor = cs.onPrimaryContainer.copy(alpha = 0.20f)
+	val decorColorStrong = cs.onPrimaryContainer.copy(alpha = 0.28f)
+	Surface(
+		modifier = Modifier.fillMaxWidth(),
+		shape = RoundedCornerShape(28.dp),
+		color = cs.primaryContainer,
+	) {
+		Box(modifier = Modifier.fillMaxWidth()) {
+			val infiniteTransition = rememberInfiniteTransition(label = "HeroShapes")
+
+			// Three pairs from the real M3 Expressive shape set, each shape continuously morphing into
+			// its partner and back. Built once: a Morph is not cheap to construct.
+			val ghostToSemiCircle = remember { Morph(ghostishShape(), semiCircleShape()) }
+			val sunnyToCookie = remember { Morph(verySunnyShape(), cookie6Shape()) }
+			val triangleToPentagon = remember { Morph(triangleShape(), pentagonShape()) }
+
+			val ghostProgress by infiniteTransition.morphProgress(9000, "ghostProgress")
+			val ghostSpin by infiniteTransition.spin(34000, "ghostSpin")
+			val sunnyProgress by infiniteTransition.morphProgress(7000, "sunnyProgress")
+			val sunnySpin by infiniteTransition.spin(26000, "sunnySpin", reverse = true)
+			val triangleProgress by infiniteTransition.morphProgress(11000, "triangleProgress")
+			val triangleSpin by infiniteTransition.spin(40000, "triangleSpin")
+			val drift by infiniteTransition.animateFloat(
+				initialValue = -1f,
+				targetValue = 1f,
+				animationSpec = infiniteRepeatable(
+					animation = tween(13000, easing = EaseInOut),
+					repeatMode = RepeatMode.Reverse,
+				),
+				label = "drift",
+			)
+
+			// Clipped by the Surface's rounded shape. The centred app icon, title and chips own the
+			// middle column, so the shapes stay in the corners and along the edges - clear of the
+			// content and well apart from each other.
+			Canvas(modifier = Modifier.matchParentSize()) {
+				val unit = size.minDimension
+				drawMorph(
+					morph = ghostToSemiCircle,
+					progress = ghostProgress,
+					center = Offset(size.width * 0.11f, size.height * 0.20f + drift * 10f),
+					size = unit * 0.42f,
+					rotationDeg = ghostSpin,
+					color = decorColor,
+				)
+				drawMorph(
+					morph = sunnyToCookie,
+					progress = sunnyProgress,
+					center = Offset(size.width * 0.94f, size.height * 0.52f - drift * 12f),
+					size = unit * 0.56f,
+					rotationDeg = sunnySpin,
+					color = decorColorStrong,
+				)
+				drawMorph(
+					morph = triangleToPentagon,
+					progress = triangleProgress,
+					center = Offset(size.width * 0.15f, size.height * 0.90f),
+					size = unit * 0.34f,
+					rotationDeg = triangleSpin,
+					color = decorColorStrong,
+				)
+			}
+		Column(
+			modifier = Modifier
+				.fillMaxWidth()
+				.padding(top = 36.dp, bottom = 28.dp, start = 24.dp, end = 24.dp),
+			horizontalAlignment = Alignment.CenterHorizontally,
+			verticalArrangement = Arrangement.spacedBy(16.dp),
+		) {
+			// Logo: rounded-squircle tile on a soft tonal plate, so the adaptive icon reads
+			// as a proper app mark rather than a tiny circle.
+			Box(
+				modifier = Modifier
+					.size(108.dp)
+					.clip(RoundedCornerShape(34.dp))
+					.background(cs.onPrimaryContainer.copy(alpha = 0.10f)),
+				contentAlignment = Alignment.Center,
+			) {
+				Image(
+					painter = rememberAnyDrawablePainter(org.koitharu.kotatsu.R.mipmap.ic_launcher),
+					contentDescription = null,
+					modifier = Modifier
+						.size(88.dp)
+						.clip(RoundedCornerShape(26.dp)),
+				)
+			}
+			Text(
+				text = stringResource(R.string.app_name),
+				style = MaterialTheme.typography.headlineLarge,
+				color = cs.onPrimaryContainer,
+				fontWeight = FontWeight.Bold,
+			)
+			Row(
+				horizontalArrangement = Arrangement.spacedBy(8.dp),
+				verticalAlignment = Alignment.CenterVertically,
+			) {
+				AboutMetaPill(
+					icon = R.drawable.ic_info_outline,
+					text = "v$appVersion",
+				)
+				AboutMetaPill(
+					icon = R.drawable.ic_github,
+					text = "HuzaifaKhalid1311",
+				)
+			}
+		}
+		}
+	}
+}
+
+@Composable
+private fun AboutMetaPill(
+	@androidx.annotation.DrawableRes icon: Int,
+	text: String,
+) {
+	val cs = MaterialTheme.colorScheme
+	Surface(
+		shape = RoundedCornerShape(50),
+		color = cs.onPrimaryContainer.copy(alpha = 0.16f),
+	) {
+		Row(
+			modifier = Modifier.padding(horizontal = 14.dp, vertical = 7.dp),
+			horizontalArrangement = Arrangement.spacedBy(8.dp),
+			verticalAlignment = Alignment.CenterVertically,
+		) {
+			Icon(
+				painter = painterResource(icon),
+				contentDescription = null,
+				tint = cs.onPrimaryContainer,
+				modifier = Modifier.size(15.dp),
+			)
+			Text(
+				text = text,
+				style = MaterialTheme.typography.labelLarge,
+				color = cs.onPrimaryContainer,
+				fontWeight = FontWeight.Medium,
+			)
+		}
+	}
+}
+
+/** A slow, eased there-and-back morph: no visible snap at either end. */
+@Composable
+private fun InfiniteTransition.morphProgress(durationMillis: Int, label: String) = animateFloat(
+	initialValue = 0f,
+	targetValue = 1f,
+	animationSpec = infiniteRepeatable(
+		animation = tween(durationMillis, easing = FastOutSlowInEasing),
+		repeatMode = RepeatMode.Reverse,
+	),
+	label = label,
+)
+
+/** A constant-speed full turn, so the shape never appears to stop or jerk. */
+@Composable
+private fun InfiniteTransition.spin(
+	durationMillis: Int,
+	label: String,
+	reverse: Boolean = false,
+) = animateFloat(
+	initialValue = if (reverse) 360f else 0f,
+	targetValue = if (reverse) 0f else 360f,
+	animationSpec = infiniteRepeatable(
+		animation = tween(durationMillis, easing = LinearEasing),
+		repeatMode = RepeatMode.Restart,
+	),
+	label = label,
+)
+
+/*
+ * The M3 Expressive shapes used by the About hero, ported from androidx.compose.material3's
+ * MaterialShapes (the Compose Material 3 version here predates it). Each is normalised, so it fits
+ * the unit square and can be morphed into any other one; [drawMorph] does the placing.
+ */
+
+private val cornerRound20 = CornerRounding(0.2f)
+private val cornerRound100 = CornerRounding(1f)
+
+private fun semiCircleShape() = RoundedPolygon.rectangle(
+	width = 1.6f,
+	height = 1f,
+	perVertexRounding = listOf(cornerRound20, cornerRound20, cornerRound100, cornerRound100),
+).normalized()
+
+private fun triangleShape() = RoundedPolygon(numVertices = 3, rounding = cornerRound20)
+	.transformed(Matrix().apply { setRotate(-90f) })
+	.normalized()
+
+private fun pentagonShape() = customPolygon(
+	listOf(
+		PointNRound(0.500f, -0.009f, CornerRounding(0.172f)),
+		PointNRound(1.030f, 0.365f, CornerRounding(0.164f)),
+		PointNRound(0.828f, 0.970f, CornerRounding(0.169f)),
+	),
+	reps = 1,
+	mirroring = true,
+).normalized()
+
+private fun verySunnyShape() = customPolygon(
+	listOf(
+		PointNRound(0.500f, 1.080f, CornerRounding(0.085f)),
+		PointNRound(0.358f, 0.843f, CornerRounding(0.085f)),
+	),
+	reps = 8,
+).normalized()
+
+private fun cookie6Shape() = customPolygon(
+	listOf(
+		PointNRound(0.723f, 0.884f, CornerRounding(0.394f)),
+		PointNRound(0.500f, 1.099f, CornerRounding(0.398f)),
+	),
+	reps = 6,
+).normalized()
+
+private fun ghostishShape() = customPolygon(
+	listOf(
+		PointNRound(0.500f, 0f, CornerRounding(1.000f)),
+		PointNRound(1f, 0f, CornerRounding(1.000f)),
+		PointNRound(1f, 1.140f, CornerRounding(0.254f, 0.106f)),
+		PointNRound(0.575f, 0.906f, CornerRounding(0.253f)),
+	),
+	reps = 1,
+	mirroring = true,
+).normalized()
+
+private class PointNRound(val x: Float, val y: Float, val rounding: CornerRounding)
+
+private fun customPolygon(
+	points: List<PointNRound>,
+	reps: Int,
+	centerX: Float = 0.5f,
+	centerY: Float = 0.5f,
+	mirroring: Boolean = false,
+): RoundedPolygon {
+	val actual = repeatPoints(points, reps, centerX, centerY, mirroring)
+	return RoundedPolygon(
+		vertices = FloatArray(actual.size * 2) { i -> if (i % 2 == 0) actual[i / 2].x else actual[i / 2].y },
+		perVertexRounding = actual.map { it.rounding },
+		centerX = centerX,
+		centerY = centerY,
+	)
+}
+
+private fun repeatPoints(
+	points: List<PointNRound>,
+	reps: Int,
+	centerX: Float,
+	centerY: Float,
+	mirroring: Boolean,
+): List<PointNRound> = if (mirroring) {
+	buildList {
+		val angles = points.map { atan2(it.y - centerY, it.x - centerX) * 180f / PI.toFloat() }
+		val distances = points.map { hypot(it.x - centerX, it.y - centerY) }
+		val actualReps = reps * 2
+		val sectionAngle = 360f / actualReps
+		repeat(actualReps) { rep ->
+			points.indices.forEach { index ->
+				val i = if (rep % 2 == 0) index else points.lastIndex - index
+				if (i > 0 || rep % 2 == 0) {
+					val degrees = sectionAngle * rep +
+						if (rep % 2 == 0) angles[i] else sectionAngle - angles[i] + 2 * angles[0]
+					val a = degrees.toRadians()
+					add(
+						PointNRound(
+							x = cos(a) * distances[i] + centerX,
+							y = sin(a) * distances[i] + centerY,
+							rounding = points[i].rounding,
+						),
+					)
+				}
+			}
+		}
+	}
+} else {
+	val n = points.size
+	(0 until n * reps).map { i ->
+		val source = points[i % n]
+		val a = ((i / n) * 360f / reps).toRadians()
+		val dx = source.x - centerX
+		val dy = source.y - centerY
+		PointNRound(
+			x = dx * cos(a) - dy * sin(a) + centerX,
+			y = dx * sin(a) + dy * cos(a) + centerY,
+			rounding = source.rounding,
+		)
+	}
+}
+
+private fun Float.toRadians(): Float = this / 360f * 2f * PI.toFloat()
+
+/**
+ * Draws [morph] at [progress], scaled from its unit square to [size] and spun about its own centre.
+ */
+private fun DrawScope.drawMorph(
+	morph: Morph,
+	progress: Float,
+	center: Offset,
+	size: Float,
+	rotationDeg: Float,
+	color: Color,
+) {
+	withTransform({
+		translate(center.x, center.y)
+		rotate(rotationDeg, Offset.Zero)
+		scale(size, size, Offset.Zero)
+		translate(-0.5f, -0.5f)
+	}) {
+		drawPath(morph.asCubics(progress).toComposePath(), color)
+	}
+}
+
+/** Converts a list of androidx.graphics.shapes [Cubic]s into a Compose [Path]. */
+private fun List<Cubic>.toComposePath(): Path {
+	val path = Path()
+	if (isEmpty()) return path
+	val first = first()
+	path.moveTo(first.anchor0X, first.anchor0Y)
+	for (c in this) {
+		path.cubicTo(c.control0X, c.control0Y, c.control1X, c.control1Y, c.anchor1X, c.anchor1Y)
+	}
+	path.close()
+	return path
+}

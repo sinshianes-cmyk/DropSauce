@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/bg_frosted_item">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<org.koitharu.kotatsu.image.ui.CoverImageView
+			android:id="@+id/imageView_cover"
+			android:layout_width="0dp"
+			android:layout_height="118dp"
+			android:background="?colorSurfaceContainer"
+			app:aspectRationHeight="0"
+			app:aspectRationWidth="0"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintDimensionRatio="2:3"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Kotatsu.Cover"
+			app:trimImage="true"
+			tools:src="@tools:sample/backgrounds/scenic" />
+
+		<include
+			android:id="@+id/corners"
+			layout="@layout/layout_cover_corners"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			app:layout_constraintEnd_toEndOf="@id/imageView_cover"
+			app:layout_constraintStart_toStartOf="@id/imageView_cover"
+			app:layout_constraintTop_toTopOf="@id/imageView_cover" />
+
+		<!-- The narrow cover can't fit this pill next to the progress one, so here it sits bottom-start
+		     (the corners include keeps its own pill hidden). -->
+		<org.koitharu.kotatsu.core.ui.widgets.IconsView
+			android:id="@+id/iconsView_bottom"
+			style="@style/Widget.Kotatsu.MangaBadges"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/card_indicator_offset"
+			android:visibility="gone"
+			app:layout_constraintBottom_toBottomOf="@id/imageView_cover"
+			app:layout_constraintStart_toStartOf="@id/imageView_cover" />
+
+		<!-- Height locked to the cover. Every line is wrap_content *plus* an equal share of the spare
+		     space, so the block spreads evenly without a two-line title ever being clipped. -->
+		<LinearLayout
+			android:id="@+id/layout_text"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:background="?attr/selectableItemBackground"
+			android:clickable="true"
+			android:focusable="true"
+			android:layout_marginStart="16dp"
+			android:layout_marginEnd="12dp"
+			android:orientation="vertical"
+			app:layout_constraintBottom_toBottomOf="@id/imageView_cover"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toEndOf="@+id/imageView_cover"
+			app:layout_constraintTop_toTopOf="@id/imageView_cover">
+
+			<TextView
+				android:id="@+id/textView_title"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:ellipsize="end"
+				android:gravity="center_vertical"
+				android:maxLines="2"
+				android:textAppearance="?attr/textAppearanceBodyLarge"
+				app:lineHeight="18dp"
+				tools:text="@tools:sample/lorem/random" />
+
+			<TextView
+				android:id="@+id/textView_chapter_name"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:ellipsize="end"
+				android:gravity="center_vertical"
+				android:maxLines="1"
+				android:textAppearance="?attr/textAppearanceBodyMedium"
+				android:visibility="gone"
+				tools:text="Chapter name" />
+
+			<LinearLayout
+				android:id="@+id/layout_history_meta"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:visibility="gone">
+
+				<com.google.android.material.button.MaterialButton
+					android:id="@+id/button_continue"
+					style="@style/Widget.Material3.Button.TonalButton"
+					android:layout_width="wrap_content"
+					android:layout_height="28dp"
+					android:insetTop="0dp"
+					android:insetBottom="0dp"
+					android:minWidth="0dp"
+					android:minHeight="0dp"
+					android:paddingStart="10dp"
+					android:paddingTop="0dp"
+					android:paddingEnd="12dp"
+					android:paddingBottom="0dp"
+					android:textSize="12sp"
+					app:icon="@drawable/ic_play"
+					app:iconPadding="4dp"
+					app:iconSize="14dp"
+					tools:text="Continue Ch. 12" />
+
+				<Space
+					android:layout_width="0dp"
+					android:layout_height="0dp"
+					android:layout_weight="1" />
+
+				<TextView
+					android:id="@+id/textView_last_opened"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="8dp"
+					android:ellipsize="end"
+					android:maxLines="1"
+					android:textAppearance="?attr/textAppearanceBodySmall"
+					tools:text="2 days ago" />
+
+			</LinearLayout>
+
+			<com.google.android.material.progressindicator.LinearProgressIndicator
+				android:id="@+id/progress_history"
+				style="@style/Widget.Kotatsu.LinearProgressIndicator.Wavy"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="2dp"
+				android:layout_marginBottom="4dp"
+				android:indeterminate="false"
+				android:max="100"
+				android:visibility="gone" />
+
+			<TextView
+				android:id="@+id/textView_author"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:ellipsize="end"
+				android:gravity="center_vertical"
+				android:maxLines="1"
+				android:textAppearance="?attr/textAppearanceBodyMedium"
+				tools:text="@tools:sample/lorem/random" />
+
+			<LinearLayout
+				android:id="@+id/layout_source"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+
+				<org.koitharu.kotatsu.core.ui.image.FaviconView
+					android:id="@+id/imageView_favicon"
+					android:layout_width="14dp"
+					android:layout_height="14dp"
+					android:layout_marginEnd="6dp"
+					android:importantForAccessibility="no" />
+
+				<TextView
+					android:id="@+id/textView_source"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:ellipsize="end"
+					android:maxLines="1"
+					android:textAppearance="?attr/textAppearanceBodySmall"
+					android:textColor="?attr/colorPrimary"
+					tools:text="@tools:sample/lorem" />
+
+			</LinearLayout>
+
+			<TextView
+				android:id="@+id/textView_tags"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:ellipsize="end"
+				android:gravity="center_vertical"
+				android:maxLines="1"
+				android:textAppearance="?attr/textAppearanceBodySmall"
+				app:lineHeight="14dp"
+				tools:text="@tools:sample/lorem/random" />
+
+		</LinearLayout>
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

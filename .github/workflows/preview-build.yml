@@ -1,0 +1,88 @@
+name: Preview Build
+
+# Builds a standalone "preview" APK on manual dispatch.
+# The preview variant is a non-debuggable build with none of the debug-only tooling
+# (no LeakCanary/StrictMode/debug settings/ACRA-debug) and its own applicationId suffix, so it
+# installs alongside the store build. R8/resource shrinking is intentionally OFF so the APK
+# installs cleanly when sideloaded. It's signed with the debug keystore (no secrets needed).
+#
+# The APK is published as a workflow artifact (zipped by GitHub) for anyone who prefers the Actions tab.
+# The SHA-256/SHA-1/MD5 hashes are printed to the run summary.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Only keep the latest preview build per branch/ref running.
+concurrency:
+  group: preview-build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  preview:
+    name: Build preview APK
+    if: github.actor == github.repository_owner
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'gradle'
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Build preview APK
+        run: ./gradlew :app:assemblePreview --no-daemon --stacktrace
+
+      - name: Collect APK and compute checksums
+        id: apk
+        run: |
+          set -euo pipefail
+          APK=$(find app/build/outputs/apk/preview -name '*.apk' | head -n1)
+          if [ -z "$APK" ]; then
+            echo "::error::No preview APK found under app/build/outputs/apk/preview"
+            exit 1
+          fi
+          SHORT_SHA=$(git rev-parse --short HEAD)
+          SAFE_REF=$(echo "${GITHUB_REF_NAME}" | tr '/ ' '__')
+          DEST="DropSauce-preview-${SAFE_REF}-${SHORT_SHA}.apk"
+          cp "$APK" "$DEST"
+
+          SHA256=$(sha256sum "$DEST" | awk '{print $1}')
+          SHA1=$(sha1sum "$DEST" | awk '{print $1}')
+          MD5=$(md5sum "$DEST" | awk '{print $1}')
+          SIZE=$(du -h "$DEST" | cut -f1)
+
+          echo "apk_name=${DEST}" >> "$GITHUB_OUTPUT"
+
+          # Write release details to the run summary.
+          {
+            echo "**Preview build of \`${GITHUB_REF_NAME}\`** — non-debuggable, no dev tooling, installs"
+            echo "as a separate app (\`org.haziffe.dropsauce.preview\`, \"DropSauce Preview\")."
+            echo ""
+            echo "| Field | Value |"
+            echo "| --- | --- |"
+            echo "| File | \`${DEST}\` |"
+            echo "| Branch | \`${GITHUB_REF_NAME}\` |"
+            echo "| Commit | \`${SHORT_SHA}\` |"
+            echo "| Size | ${SIZE} |"
+            echo "| SHA-256 | \`${SHA256}\` |"
+            echo "| SHA-1 | \`${SHA1}\` |"
+            echo "| MD5 | \`${MD5}\` |"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload preview APK as a workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.apk.outputs.apk_name }}
+          path: ${{ steps.apk.outputs.apk_name }}
+          if-no-files-found: error
+          retention-days: 30

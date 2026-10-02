@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Card fill that is 95% opaque (5% see-through) so the animated theme background shows faintly. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:alpha="0.95" android:color="?attr/colorSurfaceContainerLow"/>
+</selector>

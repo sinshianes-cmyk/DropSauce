@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item
+		android:id="@+id/action_search_all"
+		android:icon="@drawable/ic_search"
+		android:title="@string/search_all_sources"
+		android:titleCondensed="@string/search" />
+
+	<item
+		android:id="@+id/action_language_filter"
+		android:icon="@drawable/ic_language_filter"
+		android:title="@string/filter_by_language"
+		android:titleCondensed="@string/language" />
+
+	<item
+		android:id="@+id/action_manage"
+		android:icon="@drawable/ic_manga_source"
+		android:title="@string/extension_management"
+		android:titleCondensed="@string/manage" />
+
+</menu>

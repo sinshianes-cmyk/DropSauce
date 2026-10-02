@@ -1,0 +1,1765 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Totoro -->
+	<style name="ThemeOverlay.Kotatsu.Totoro">
+		<item name="colorPrimary">@color/totoro_primary</item>
+		<item name="colorOnPrimary">@color/totoro_onPrimary</item>
+		<item name="colorPrimaryContainer">@color/totoro_primaryContainer</item>
+		<item name="colorOnPrimaryContainer">@color/totoro_onPrimaryContainer</item>
+		<item name="colorSecondary">@color/totoro_secondary</item>
+		<item name="colorOnSecondary">@color/totoro_onSecondary</item>
+		<item name="colorSecondaryContainer">@color/totoro_secondaryContainer</item>
+		<item name="colorOnSecondaryContainer">@color/totoro_onSecondaryContainer</item>
+		<item name="colorTertiary">@color/totoro_tertiary</item>
+		<item name="colorOnTertiary">@color/totoro_onTertiary</item>
+		<item name="colorTertiaryContainer">@color/totoro_tertiaryContainer</item>
+		<item name="colorOnTertiaryContainer">@color/totoro_onTertiaryContainer</item>
+		<item name="colorError">@color/totoro_error</item>
+		<item name="colorOnError">@color/totoro_onError</item>
+		<item name="colorErrorContainer">@color/totoro_errorContainer</item>
+		<item name="colorOnErrorContainer">@color/totoro_onErrorContainer</item>
+		<item name="android:colorBackground">@color/totoro_background</item>
+		<item name="colorOnBackground">@color/totoro_onBackground</item>
+		<item name="colorSurface">@color/totoro_surface</item>
+		<item name="colorOnSurface">@color/totoro_onSurface</item>
+		<item name="colorSurfaceVariant">@color/totoro_surfaceVariant</item>
+		<item name="colorOnSurfaceVariant">@color/totoro_onSurfaceVariant</item>
+		<item name="colorOutline">@color/totoro_outline</item>
+		<item name="colorOutlineVariant">@color/totoro_outlineVariant</item>
+		<item name="colorSurfaceInverse">@color/totoro_inverseSurface</item>
+		<item name="colorOnSurfaceInverse">@color/totoro_inverseOnSurface</item>
+		<item name="colorPrimaryInverse">@color/totoro_inversePrimary</item>
+		<item name="colorPrimaryFixed">@color/totoro_primaryFixed</item>
+		<item name="colorOnPrimaryFixed">@color/totoro_onPrimaryFixed</item>
+		<item name="colorPrimaryFixedDim">@color/totoro_primaryFixedDim</item>
+		<item name="colorOnPrimaryFixedVariant">@color/totoro_onPrimaryFixedVariant</item>
+		<item name="colorSecondaryFixed">@color/totoro_secondaryFixed</item>
+		<item name="colorOnSecondaryFixed">@color/totoro_onSecondaryFixed</item>
+		<item name="colorSecondaryFixedDim">@color/totoro_secondaryFixedDim</item>
+		<item name="colorOnSecondaryFixedVariant">@color/totoro_onSecondaryFixedVariant</item>
+		<item name="colorTertiaryFixed">@color/totoro_tertiaryFixed</item>
+		<item name="colorOnTertiaryFixed">@color/totoro_onTertiaryFixed</item>
+		<item name="colorTertiaryFixedDim">@color/totoro_tertiaryFixedDim</item>
+		<item name="colorOnTertiaryFixedVariant">@color/totoro_onTertiaryFixedVariant</item>
+		<item name="colorSurfaceDim">@color/totoro_surfaceDim</item>
+		<item name="colorSurfaceBright">@color/totoro_surfaceBright</item>
+		<item name="colorSurfaceContainerLowest">@color/totoro_surfaceContainerLowest</item>
+		<item name="colorSurfaceContainerLow">@color/totoro_surfaceContainerLow</item>
+		<item name="colorSurfaceContainer">@color/totoro_surfaceContainer</item>
+		<item name="colorSurfaceContainerHigh">@color/totoro_surfaceContainerHigh</item>
+		<item name="colorSurfaceContainerHighest">@color/totoro_surfaceContainerHighest</item>
+	</style>
+	<!-- Asuka -->
+	<style name="ThemeOverlay.Kotatsu.Asuka">
+		<item name="colorPrimary">@color/asuka_primary</item>
+		<item name="colorOnPrimary">@color/asuka_onPrimary</item>
+		<item name="colorPrimaryContainer">@color/asuka_primaryContainer</item>
+		<item name="colorOnPrimaryContainer">@color/asuka_onPrimaryContainer</item>
+		<item name="colorSecondary">@color/asuka_secondary</item>
+		<item name="colorOnSecondary">@color/asuka_onSecondary</item>
+		<item name="colorSecondaryContainer">@color/asuka_secondaryContainer</item>
+		<item name="colorOnSecondaryContainer">@color/asuka_onSecondaryContainer</item>
+		<item name="colorTertiary">@color/asuka_tertiary</item>
+		<item name="colorOnTertiary">@color/asuka_onTertiary</item>
+		<item name="colorTertiaryContainer">@color/asuka_tertiaryContainer</item>
+		<item name="colorOnTertiaryContainer">@color/asuka_onTertiaryContainer</item>
+		<item name="colorError">@color/asuka_error</item>
+		<item name="colorOnError">@color/asuka_onError</item>
+		<item name="colorErrorContainer">@color/asuka_errorContainer</item>
+		<item name="colorOnErrorContainer">@color/asuka_onErrorContainer</item>
+		<item name="android:colorBackground">@color/asuka_background</item>
+		<item name="colorOnBackground">@color/asuka_onBackground</item>
+		<item name="colorSurface">@color/asuka_surface</item>
+		<item name="colorOnSurface">@color/asuka_onSurface</item>
+		<item name="colorSurfaceVariant">@color/asuka_surfaceVariant</item>
+		<item name="colorOnSurfaceVariant">@color/asuka_onSurfaceVariant</item>
+		<item name="colorOutline">@color/asuka_outline</item>
+		<item name="colorOutlineVariant">@color/asuka_outlineVariant</item>
+		<item name="colorSurfaceInverse">@color/asuka_inverseSurface</item>
+		<item name="colorOnSurfaceInverse">@color/asuka_inverseOnSurface</item>
+		<item name="colorPrimaryInverse">@color/asuka_inversePrimary</item>
+		<item name="colorPrimaryFixed">@color/asuka_primaryFixed</item>
+		<item name="colorOnPrimaryFixed">@color/asuka_onPrimaryFixed</item>
+		<item name="colorPrimaryFixedDim">@color/asuka_primaryFixedDim</item>
+		<item name="colorOnPrimaryFixedVariant">@color/asuka_onPrimaryFixedVariant</item>
+		<item name="colorSecondaryFixed">@color/asuka_secondaryFixed</item>
+		<item name="colorOnSecondaryFixed">@color/asuka_onSecondaryFixed</item>
+		<item name="colorSecondaryFixedDim">@color/asuka_secondaryFixedDim</item>
+		<item name="colorOnSecondaryFixedVariant">@color/asuka_onSecondaryFixedVariant</item>
+		<item name="colorTertiaryFixed">@color/asuka_tertiaryFixed</item>
+		<item name="colorOnTertiaryFixed">@color/asuka_onTertiaryFixed</item>
+		<item name="colorTertiaryFixedDim">@color/asuka_tertiaryFixedDim</item>
+		<item name="colorOnTertiaryFixedVariant">@color/asuka_onTertiaryFixedVariant</item>
+		<item name="colorSurfaceDim">@color/asuka_surfaceDim</item>
+		<item name="colorSurfaceBright">@color/asuka_surfaceBright</item>
+		<item name="colorSurfaceContainerLowest">@color/asuka_surfaceContainerLowest</item>
+		<item name="colorSurfaceContainerLow">@color/asuka_surfaceContainerLow</item>
+		<item name="colorSurfaceContainer">@color/asuka_surfaceContainer</item>
+		<item name="colorSurfaceContainerHigh">@color/asuka_surfaceContainerHigh</item>
+		<item name="colorSurfaceContainerHighest">@color/asuka_surfaceContainerHighest</item>
+	</style>
+
+	<!-- Itsuka -->
+	<style name="ThemeOverlay.Kotatsu.Itsuka">
+		<item name="colorPrimary">@color/itsuka_primary</item>
+		<item name="colorOnPrimary">@color/itsuka_onPrimary</item>
+		<item name="colorPrimaryContainer">@color/itsuka_primaryContainer</item>
+		<item name="colorOnPrimaryContainer">@color/itsuka_onPrimaryContainer</item>
+		<item name="colorSecondary">@color/itsuka_secondary</item>
+		<item name="colorOnSecondary">@color/itsuka_onSecondary</item>
+		<item name="colorSecondaryContainer">@color/itsuka_secondaryContainer</item>
+		<item name="colorOnSecondaryContainer">@color/itsuka_onSecondaryContainer</item>
+		<item name="colorTertiary">@color/itsuka_tertiary</item>
+		<item name="colorOnTertiary">@color/itsuka_onTertiary</item>
+		<item name="colorTertiaryContainer">@color/itsuka_tertiaryContainer</item>
+		<item name="colorOnTertiaryContainer">@color/itsuka_onTertiaryContainer</item>
+		<item name="colorError">@color/itsuka_error</item>
+		<item name="colorOnError">@color/itsuka_onError</item>
+		<item name="colorErrorContainer">@color/itsuka_errorContainer</item>
+		<item name="colorOnErrorContainer">@color/itsuka_onErrorContainer</item>
+		<item name="android:colorBackground">@color/itsuka_background</item>
+		<item name="colorOnBackground">@color/itsuka_onBackground</item>
+		<item name="colorSurface">@color/itsuka_surface</item>
+		<item name="colorOnSurface">@color/itsuka_onSurface</item>
+		<item name="colorSurfaceVariant">@color/itsuka_surfaceVariant</item>
+		<item name="colorOnSurfaceVariant">@color/itsuka_onSurfaceVariant</item>
+		<item name="colorOutline">@color/itsuka_outline</item>
+		<item name="colorOutlineVariant">@color/itsuka_outlineVariant</item>
+		<item name="colorSurfaceInverse">@color/itsuka_inverseSurface</item>
+		<item name="colorOnSurfaceInverse">@color/itsuka_inverseOnSurface</item>
+		<item name="colorPrimaryInverse">@color/itsuka_inversePrimary</item>
+		<item name="colorPrimaryFixed">@color/itsuka_primaryFixed</item>
+		<item name="colorOnPrimaryFixed">@color/itsuka_onPrimaryFixed</item>
+		<item name="colorPrimaryFixedDim">@color/itsuka_primaryFixedDim</item>
+		<item name="colorOnPrimaryFixedVariant">@color/itsuka_onPrimaryFixedVariant</item>
+		<item name="colorSecondaryFixed">@color/itsuka_secondaryFixed</item>
+		<item name="colorOnSecondaryFixed">@color/itsuka_onSecondaryFixed</item>
+		<item name="colorSecondaryFixedDim">@color/itsuka_secondaryFixedDim</item>
+		<item name="colorOnSecondaryFixedVariant">@color/itsuka_onSecondaryFixedVariant</item>
+		<item name="colorTertiaryFixed">@color/itsuka_tertiaryFixed</item>
+		<item name="colorOnTertiaryFixed">@color/itsuka_onTertiaryFixed</item>
+		<item name="colorTertiaryFixedDim">@color/itsuka_tertiaryFixedDim</item>
+		<item name="colorOnTertiaryFixedVariant">@color/itsuka_onTertiaryFixedVariant</item>
+		<item name="colorSurfaceDim">@color/itsuka_surfaceDim</item>
+		<item name="colorSurfaceBright">@color/itsuka_surfaceBright</item>
+		<item name="colorSurfaceContainerLowest">@color/itsuka_surfaceContainerLowest</item>
+		<item name="colorSurfaceContainerLow">@color/itsuka_surfaceContainerLow</item>
+		<item name="colorSurfaceContainer">@color/itsuka_surfaceContainer</item>
+		<item name="colorSurfaceContainerHigh">@color/itsuka_surfaceContainerHigh</item>
+		<item name="colorSurfaceContainerHighest">@color/itsuka_surfaceContainerHighest</item>
+	</style>
+	<!-- Kanade -->
+	<style name="ThemeOverlay.Kotatsu.Kanade">
+		<item name="colorPrimary">@color/kanade_primary</item>
+		<item name="colorOnPrimary">@color/kanade_onPrimary</item>
+		<item name="colorPrimaryContainer">@color/kanade_primaryContainer</item>
+		<item name="colorOnPrimaryContainer">@color/kanade_onPrimaryContainer</item>
+		<item name="colorSecondary">@color/kanade_secondary</item>
+		<item name="colorOnSecondary">@color/kanade_onSecondary</item>
+		<item name="colorSecondaryContainer">@color/kanade_secondaryContainer</item>
+		<item name="colorOnSecondaryContainer">@color/kanade_onSecondaryContainer</item>
+		<item name="colorTertiary">@color/kanade_tertiary</item>
+		<item name="colorOnTertiary">@color/kanade_onTertiary</item>
+		<item name="colorTertiaryContainer">@color/kanade_tertiaryContainer</item>
+		<item name="colorOnTertiaryContainer">@color/kanade_onTertiaryContainer</item>
+		<item name="colorError">@color/kanade_error</item>
+		<item name="colorOnError">@color/kanade_onError</item>
+		<item name="colorErrorContainer">@color/kanade_errorContainer</item>
+		<item name="colorOnErrorContainer">@color/kanade_onErrorContainer</item>
+		<item name="android:colorBackground">@color/kanade_background</item>
+		<item name="colorOnBackground">@color/kanade_onBackground</item>
+		<item name="colorSurface">@color/kanade_surface</item>
+		<item name="colorOnSurface">@color/kanade_onSurface</item>
+		<item name="colorSurfaceVariant">@color/kanade_surfaceVariant</item>
+		<item name="colorOnSurfaceVariant">@color/kanade_onSurfaceVariant</item>
+		<item name="colorOutline">@color/kanade_outline</item>
+		<item name="colorOutlineVariant">@color/kanade_outlineVariant</item>
+		<item name="colorSurfaceInverse">@color/kanade_inverseSurface</item>
+		<item name="colorOnSurfaceInverse">@color/kanade_inverseOnSurface</item>
+		<item name="colorPrimaryInverse">@color/kanade_inversePrimary</item>
+		<item name="colorPrimaryFixed">@color/kanade_primaryFixed</item>
+		<item name="colorOnPrimaryFixed">@color/kanade_onPrimaryFixed</item>
+		<item name="colorPrimaryFixedDim">@color/kanade_primaryFixedDim</item>
+		<item name="colorOnPrimaryFixedVariant">@color/kanade_onPrimaryFixedVariant</item>
+		<item name="colorSecondaryFixed">@color/kanade_secondaryFixed</item>
+		<item name="colorOnSecondaryFixed">@color/kanade_onSecondaryFixed</item>
+		<item name="colorSecondaryFixedDim">@color/kanade_secondaryFixedDim</item>
+		<item name="colorOnSecondaryFixedVariant">@color/kanade_onSecondaryFixedVariant</item>
+		<item name="colorTertiaryFixed">@color/kanade_tertiaryFixed</item>
+		<item name="colorOnTertiaryFixed">@color/kanade_onTertiaryFixed</item>
+		<item name="colorTertiaryFixedDim">@color/kanade_tertiaryFixedDim</item>
+		<item name="colorOnTertiaryFixedVariant">@color/kanade_onTertiaryFixedVariant</item>
+		<item name="colorSurfaceDim">@color/kanade_surfaceDim</item>
+		<item name="colorSurfaceBright">@color/kanade_surfaceBright</item>
+		<item name="colorSurfaceContainerLowest">@color/kanade_surfaceContainerLowest</item>
+		<item name="colorSurfaceContainerLow">@color/kanade_surfaceContainerLow</item>
+		<item name="colorSurfaceContainer">@color/kanade_surfaceContainer</item>
+		<item name="colorSurfaceContainerHigh">@color/kanade_surfaceContainerHigh</item>
+		<item name="colorSurfaceContainerHighest">@color/kanade_surfaceContainerHighest</item>
+	</style>
+	<!-- Mamimi -->
+	<style name="ThemeOverlay.Kotatsu.Mamimi">
+		<item name="colorPrimary">@color/mamimi_primary</item>
+		<item name="colorOnPrimary">@color/mamimi_onPrimary</item>
+		<item name="colorPrimaryContainer">@color/mamimi_primaryContainer</item>
+		<item name="colorOnPrimaryContainer">@color/mamimi_onPrimaryContainer</item>
+		<item name="colorSecondary">@color/mamimi_secondary</item>
+		<item name="colorOnSecondary">@color/mamimi_onSecondary</item>
+		<item name="colorSecondaryContainer">@color/mamimi_secondaryContainer</item>
+		<item name="colorOnSecondaryContainer">@color/mamimi_onSecondaryContainer</item>
+		<item name="colorTertiary">@color/mamimi_tertiary</item>
+		<item name="colorOnTertiary">@color/mamimi_onTertiary</item>
+		<item name="colorTertiaryContainer">@color/mamimi_tertiaryContainer</item>
+		<item name="colorOnTertiaryContainer">@color/mamimi_onTertiaryContainer</item>
+		<item name="colorError">@color/mamimi_error</item>
+		<item name="colorOnError">@color/mamimi_onError</item>
+		<item name="colorErrorContainer">@color/mamimi_errorContainer</item>
+		<item name="colorOnErrorContainer">@color/mamimi_onErrorContainer</item>
+		<item name="android:colorBackground">@color/mamimi_background</item>
+		<item name="colorOnBackground">@color/mamimi_onBackground</item>
+		<item name="colorSurface">@color/mamimi_surface</item>
+		<item name="colorOnSurface">@color/mamimi_onSurface</item>
+		<item name="colorSurfaceVariant">@color/mamimi_surfaceVariant</item>
+		<item name="colorOnSurfaceVariant">@color/mamimi_onSurfaceVariant</item>
+		<item name="colorOutline">@color/mamimi_outline</item>
+		<item name="colorOutlineVariant">@color/mamimi_outlineVariant</item>
+		<item name="colorSurfaceInverse">@color/mamimi_inverseSurface</item>
+		<item name="colorOnSurfaceInverse">@color/mamimi_inverseOnSurface</item>
+		<item name="colorPrimaryInverse">@color/mamimi_inversePrimary</item>
+		<item name="colorPrimaryFixed">@color/mamimi_primaryFixed</item>
+		<item name="colorOnPrimaryFixed">@color/mamimi_onPrimaryFixed</item>
+		<item name="colorPrimaryFixedDim">@color/mamimi_primaryFixedDim</item>
+		<item name="colorOnPrimaryFixedVariant">@color/mamimi_onPrimaryFixedVariant</item>
+		<item name="colorSecondaryFixed">@color/mamimi_secondaryFixed</item>
+		<item name="colorOnSecondaryFixed">@color/mamimi_onSecondaryFixed</item>
+		<item name="colorSecondaryFixedDim">@color/mamimi_secondaryFixedDim</item>
+		<item name="colorOnSecondaryFixedVariant">@color/mamimi_onSecondaryFixedVariant</item>
+		<item name="colorTertiaryFixed">@color/mamimi_tertiaryFixed</item>
+		<item name="colorOnTertiaryFixed">@color/mamimi_onTertiaryFixed</item>
+		<item name="colorTertiaryFixedDim">@color/mamimi_tertiaryFixedDim</item>
+		<item name="colorOnTertiaryFixedVariant">@color/mamimi_onTertiaryFixedVariant</item>
+		<item name="colorSurfaceDim">@color/mamimi_surfaceDim</item>
+		<item name="colorSurfaceBright">@color/mamimi_surfaceBright</item>
+		<item name="colorSurfaceContainerLowest">@color/mamimi_surfaceContainerLowest</item>
+		<item name="colorSurfaceContainerLow">@color/mamimi_surfaceContainerLow</item>
+		<item name="colorSurfaceContainer">@color/mamimi_surfaceContainer</item>
+		<item name="colorSurfaceContainerHigh">@color/mamimi_surfaceContainerHigh</item>
+		<item name="colorSurfaceContainerHighest">@color/mamimi_surfaceContainerHighest</item>
+	</style>
+	<!-- Miku -->
+	<style name="ThemeOverlay.Kotatsu.Miku">
+		<item name="colorPrimary">@color/miku_primary</item>
+		<item name="colorOnPrimary">@color/miku_onPrimary</item>
+		<item name="colorPrimaryContainer">@color/miku_primaryContainer</item>
+		<item name="colorOnPrimaryContainer">@color/miku_onPrimaryContainer</item>
+		<item name="colorSecondary">@color/miku_secondary</item>
+		<item name="colorOnSecondary">@color/miku_onSecondary</item>
+		<item name="colorSecondaryContainer">@color/miku_secondaryContainer</item>
+		<item name="colorOnSecondaryContainer">@color/miku_onSecondaryContainer</item>
+		<item name="colorTertiary">@color/miku_tertiary</item>
+		<item name="colorOnTertiary">@color/miku_onTertiary</item>
+		<item name="colorTertiaryContainer">@color/miku_tertiaryContainer</item>
+		<item name="colorOnTertiaryContainer">@color/miku_onTertiaryContainer</item>
+		<item name="colorError">@color/miku_error</item>
+		<item name="colorOnError">@color/miku_onError</item>
+		<item name="colorErrorContainer">@color/miku_errorContainer</item>
+		<item name="colorOnErrorContainer">@color/miku_onErrorContainer</item>
+		<item name="android:colorBackground">@color/miku_background</item>
+		<item name="colorOnBackground">@color/miku_onBackground</item>
+		<item name="colorSurface">@color/miku_surface</item>
+		<item name="colorOnSurface">@color/miku_onSurface</item>
+		<item name="colorSurfaceVariant">@color/miku_surfaceVariant</item>
+		<item name="colorOnSurfaceVariant">@color/miku_onSurfaceVariant</item>
+		<item name="colorOutline">@color/miku_outline</item>
+		<item name="colorOutlineVariant">@color/miku_outlineVariant</item>
+		<item name="colorSurfaceInverse">@color/miku_inverseSurface</item>
+		<item name="colorOnSurfaceInverse">@color/miku_inverseOnSurface</item>
+		<item name="colorPrimaryInverse">@color/miku_inversePrimary</item>
+		<item name="colorPrimaryFixed">@color/miku_primaryFixed</item>
+		<item name="colorOnPrimaryFixed">@color/miku_onPrimaryFixed</item>
+		<item name="colorPrimaryFixedDim">@color/miku_primaryFixedDim</item>
+		<item name="colorOnPrimaryFixedVariant">@color/miku_onPrimaryFixedVariant</item>
+		<item name="colorSecondaryFixed">@color/miku_secondaryFixed</item>
+		<item name="colorOnSecondaryFixed">@color/miku_onSecondaryFixed</item>
+		<item name="colorSecondaryFixedDim">@color/miku_secondaryFixedDim</item>
+		<item name="colorOnSecondaryFixedVariant">@color/miku_onSecondaryFixedVariant</item>
+		<item name="colorTertiaryFixed">@color/miku_tertiaryFixed</item>
+		<item name="colorOnTertiaryFixed">@color/miku_onTertiaryFixed</item>
+		<item name="colorTertiaryFixedDim">@color/miku_tertiaryFixedDim</item>
+		<item name="colorOnTertiaryFixedVariant">@color/miku_onTertiaryFixedVariant</item>
+		<item name="colorSurfaceDim">@color/miku_surfaceDim</item>
+		<item name="colorSurfaceBright">@color/miku_surfaceBright</item>
+		<item name="colorSurfaceContainerLowest">@color/miku_surfaceContainerLowest</item>
+		<item name="colorSurfaceContainerLow">@color/miku_surfaceContainerLow</item>
+		<item name="colorSurfaceContainer">@color/miku_surfaceContainer</item>
+		<item name="colorSurfaceContainerHigh">@color/miku_surfaceContainerHigh</item>
+		<item name="colorSurfaceContainerHighest">@color/miku_surfaceContainerHighest</item>
+	</style>
+	<!-- Mion -->
+	<style name="ThemeOverlay.Kotatsu.Mion">
+		<item name="colorPrimary">@color/mion_primary</item>
+		<item name="colorOnPrimary">@color/mion_onPrimary</item>
+		<item name="colorPrimaryContainer">@color/mion_primaryContainer</item>
+		<item name="colorOnPrimaryContainer">@color/mion_onPrimaryContainer</item>
+		<item name="colorSecondary">@color/mion_secondary</item>
+		<item name="colorOnSecondary">@color/mion_onSecondary</item>
+		<item name="colorSecondaryContainer">@color/mion_secondaryContainer</item>
+		<item name="colorOnSecondaryContainer">@color/mion_onSecondaryContainer</item>
+		<item name="colorTertiary">@color/mion_tertiary</item>
+		<item name="colorOnTertiary">@color/mion_onTertiary</item>
+		<item name="colorTertiaryContainer">@color/mion_tertiaryContainer</item>
+		<item name="colorOnTertiaryContainer">@color/mion_onTertiaryContainer</item>
+		<item name="colorError">@color/mion_error</item>
+		<item name="colorOnError">@color/mion_onError</item>
+		<item name="colorErrorContainer">@color/mion_errorContainer</item>
+		<item name="colorOnErrorContainer">@color/mion_onErrorContainer</item>
+		<item name="android:colorBackground">@color/mion_background</item>
+		<item name="colorOnBackground">@color/mion_onBackground</item>
+		<item name="colorSurface">@color/mion_surface</item>
+		<item name="colorOnSurface">@color/mion_onSurface</item>
+		<item name="colorSurfaceVariant">@color/mion_surfaceVariant</item>
+		<item name="colorOnSurfaceVariant">@color/mion_onSurfaceVariant</item>
+		<item name="colorOutline">@color/mion_outline</item>
+		<item name="colorOutlineVariant">@color/mion_outlineVariant</item>
+		<item name="colorSurfaceInverse">@color/mion_inverseSurface</item>
+		<item name="colorOnSurfaceInverse">@color/mion_inverseOnSurface</item>
+		<item name="colorPrimaryInverse">@color/mion_inversePrimary</item>
+		<item name="colorPrimaryFixed">@color/mion_primaryFixed</item>
+		<item name="colorOnPrimaryFixed">@color/mion_onPrimaryFixed</item>
+		<item name="colorPrimaryFixedDim">@color/mion_primaryFixedDim</item>
+		<item name="colorOnPrimaryFixedVariant">@color/mion_onPrimaryFixedVariant</item>
+		<item name="colorSecondaryFixed">@color/mion_secondaryFixed</item>
+		<item name="colorOnSecondaryFixed">@color/mion_onSecondaryFixed</item>
+		<item name="colorSecondaryFixedDim">@color/mion_secondaryFixedDim</item>
+		<item name="colorOnSecondaryFixedVariant">@color/mion_onSecondaryFixedVariant</item>
+		<item name="colorTertiaryFixed">@color/mion_tertiaryFixed</item>
+		<item name="colorOnTertiaryFixed">@color/mion_onTertiaryFixed</item>
+		<item name="colorTertiaryFixedDim">@color/mion_tertiaryFixedDim</item>
+		<item name="colorOnTertiaryFixedVariant">@color/mion_onTertiaryFixedVariant</item>
+		<item name="colorSurfaceDim">@color/mion_surfaceDim</item>
+		<item name="colorSurfaceBright">@color/mion_surfaceBright</item>
+		<item name="colorSurfaceContainerLowest">@color/mion_surfaceContainerLowest</item>
+		<item name="colorSurfaceContainerLow">@color/mion_surfaceContainerLow</item>
+		<item name="colorSurfaceContainer">@color/mion_surfaceContainer</item>
+		<item name="colorSurfaceContainerHigh">@color/mion_surfaceContainerHigh</item>
+		<item name="colorSurfaceContainerHighest">@color/mion_surfaceContainerHighest</item>
+	</style>
+	<!-- Rikka -->
+	<style name="ThemeOverlay.Kotatsu.Rikka">
+		<item name="colorPrimary">@color/rikka_primary</item>
+		<item name="colorOnPrimary">@color/rikka_onPrimary</item>
+		<item name="colorPrimaryContainer">@color/rikka_primaryContainer</item>
+		<item name="colorOnPrimaryContainer">@color/rikka_onPrimaryContainer</item>
+		<item name="colorSecondary">@color/rikka_secondary</item>
+		<item name="colorOnSecondary">@color/rikka_onSecondary</item>
+		<item name="colorSecondaryContainer">@color/rikka_secondaryContainer</item>
+		<item name="colorOnSecondaryContainer">@color/rikka_onSecondaryContainer</item>
+		<item name="colorTertiary">@color/rikka_tertiary</item>
+		<item name="colorOnTertiary">@color/rikka_onTertiary</item>
+		<item name="colorTertiaryContainer">@color/rikka_tertiaryContainer</item>
+		<item name="colorOnTertiaryContainer">@color/rikka_onTertiaryContainer</item>
+		<item name="colorError">@color/rikka_error</item>
+		<item name="colorOnError">@color/rikka_onError</item>
+		<item name="colorErrorContainer">@color/rikka_errorContainer</item>
+		<item name="colorOnErrorContainer">@color/rikka_onErrorContainer</item>
+		<item name="android:colorBackground">@color/rikka_background</item>
+		<item name="colorOnBackground">@color/rikka_onBackground</item>
+		<item name="colorSurface">@color/rikka_surface</item>
+		<item name="colorOnSurface">@color/rikka_onSurface</item>
+		<item name="colorSurfaceVariant">@color/rikka_surfaceVariant</item>
+		<item name="colorOnSurfaceVariant">@color/rikka_onSurfaceVariant</item>
+		<item name="colorOutline">@color/rikka_outline</item>
+		<item name="colorOutlineVariant">@color/rikka_outlineVariant</item>
+		<item name="colorSurfaceInverse">@color/rikka_inverseSurface</item>
+		<item name="colorOnSurfaceInverse">@color/rikka_inverseOnSurface</item>
+		<item name="colorPrimaryInverse">@color/rikka_inversePrimary</item>
+		<item name="colorPrimaryFixed">@color/rikka_primaryFixed</item>
+		<item name="colorOnPrimaryFixed">@color/rikka_onPrimaryFixed</item>
+		<item name="colorPrimaryFixedDim">@color/rikka_primaryFixedDim</item>
+		<item name="colorOnPrimaryFixedVariant">@color/rikka_onPrimaryFixedVariant</item>
+		<item name="colorSecondaryFixed">@color/rikka_secondaryFixed</item>
+		<item name="colorOnSecondaryFixed">@color/rikka_onSecondaryFixed</item>
+		<item name="colorSecondaryFixedDim">@color/rikka_secondaryFixedDim</item>
+		<item name="colorOnSecondaryFixedVariant">@color/rikka_onSecondaryFixedVariant</item>
+		<item name="colorTertiaryFixed">@color/rikka_tertiaryFixed</item>
+		<item name="colorOnTertiaryFixed">@color/rikka_onTertiaryFixed</item>
+		<item name="colorTertiaryFixedDim">@color/rikka_tertiaryFixedDim</item>
+		<item name="colorOnTertiaryFixedVariant">@color/rikka_onTertiaryFixedVariant</item>
+		<item name="colorSurfaceDim">@color/rikka_surfaceDim</item>
+		<item name="colorSurfaceBright">@color/rikka_surfaceBright</item>
+		<item name="colorSurfaceContainerLowest">@color/rikka_surfaceContainerLowest</item>
+		<item name="colorSurfaceContainerLow">@color/rikka_surfaceContainerLow</item>
+		<item name="colorSurfaceContainer">@color/rikka_surfaceContainer</item>
+		<item name="colorSurfaceContainerHigh">@color/rikka_surfaceContainerHigh</item>
+		<item name="colorSurfaceContainerHighest">@color/rikka_surfaceContainerHighest</item>
+	</style>
+	<!-- Sakura -->
+	<style name="ThemeOverlay.Kotatsu.Sakura">
+		<item name="colorPrimary">@color/sakura_primary</item>
+		<item name="colorOnPrimary">@color/sakura_onPrimary</item>
+		<item name="colorPrimaryContainer">@color/sakura_primaryContainer</item>
+		<item name="colorOnPrimaryContainer">@color/sakura_onPrimaryContainer</item>
+		<item name="colorSecondary">@color/sakura_secondary</item>
+		<item name="colorOnSecondary">@color/sakura_onSecondary</item>
+		<item name="colorSecondaryContainer">@color/sakura_secondaryContainer</item>
+		<item name="colorOnSecondaryContainer">@color/sakura_onSecondaryContainer</item>
+		<item name="colorTertiary">@color/sakura_tertiary</item>
+		<item name="colorOnTertiary">@color/sakura_onTertiary</item>
+		<item name="colorTertiaryContainer">@color/sakura_tertiaryContainer</item>
+		<item name="colorOnTertiaryContainer">@color/sakura_onTertiaryContainer</item>
+		<item name="colorError">@color/sakura_error</item>
+		<item name="colorOnError">@color/sakura_onError</item>
+		<item name="colorErrorContainer">@color/sakura_errorContainer</item>
+		<item name="colorOnErrorContainer">@color/sakura_onErrorContainer</item>
+		<item name="android:colorBackground">@color/sakura_background</item>
+		<item name="colorOnBackground">@color/sakura_onBackground</item>
+		<item name="colorSurface">@color/sakura_surface</item>
+		<item name="colorOnSurface">@color/sakura_onSurface</item>
+		<item name="colorSurfaceVariant">@color/sakura_surfaceVariant</item>
+		<item name="colorOnSurfaceVariant">@color/sakura_onSurfaceVariant</item>
+		<item name="colorOutline">@color/sakura_outline</item>
+		<item name="colorOutlineVariant">@color/sakura_outlineVariant</item>
+		<item name="colorSurfaceInverse">@color/sakura_inverseSurface</item>
+		<item name="colorOnSurfaceInverse">@color/sakura_inverseOnSurface</item>
+		<item name="colorPrimaryInverse">@color/sakura_inversePrimary</item>
+		<item name="colorPrimaryFixed">@color/sakura_primaryFixed</item>
+		<item name="colorOnPrimaryFixed">@color/sakura_onPrimaryFixed</item>
+		<item name="colorPrimaryFixedDim">@color/sakura_primaryFixedDim</item>
+		<item name="colorOnPrimaryFixedVariant">@color/sakura_onPrimaryFixedVariant</item>
+		<item name="colorSecondaryFixed">@color/sakura_secondaryFixed</item>
+		<item name="colorOnSecondaryFixed">@color/sakura_onSecondaryFixed</item>
+		<item name="colorSecondaryFixedDim">@color/sakura_secondaryFixedDim</item>
+		<item name="colorOnSecondaryFixedVariant">@color/sakura_onSecondaryFixedVariant</item>
+		<item name="colorTertiaryFixed">@color/sakura_tertiaryFixed</item>
+		<item name="colorOnTertiaryFixed">@color/sakura_onTertiaryFixed</item>
+		<item name="colorTertiaryFixedDim">@color/sakura_tertiaryFixedDim</item>
+		<item name="colorOnTertiaryFixedVariant">@color/sakura_onTertiaryFixedVariant</item>
+		<item name="colorSurfaceDim">@color/sakura_surfaceDim</item>
+		<item name="colorSurfaceBright">@color/sakura_surfaceBright</item>
+		<item name="colorSurfaceContainerLowest">@color/sakura_surfaceContainerLowest</item>
+		<item name="colorSurfaceContainerLow">@color/sakura_surfaceContainerLow</item>
+		<item name="colorSurfaceContainer">@color/sakura_surfaceContainer</item>
+		<item name="colorSurfaceContainerHigh">@color/sakura_surfaceContainerHigh</item>
+		<item name="colorSurfaceContainerHighest">@color/sakura_surfaceContainerHighest</item>
+	</style>
+	<!-- Shana -->
+	<style name="ThemeOverlay.Kotatsu.Shana">
+		<item name="colorPrimary">@color/shana_primary</item>
+		<item name="colorOnPrimary">@color/shana_onPrimary</item>
+		<item name="colorPrimaryContainer">@color/shana_primaryContainer</item>
+		<item name="colorOnPrimaryContainer">@color/shana_onPrimaryContainer</item>
+		<item name="colorSecondary">@color/shana_secondary</item>
+		<item name="colorOnSecondary">@color/shana_onSecondary</item>
+		<item name="colorSecondaryContainer">@color/shana_secondaryContainer</item>
+		<item name="colorOnSecondaryContainer">@color/shana_onSecondaryContainer</item>
+		<item name="colorTertiary">@color/shana_tertiary</item>
+		<item name="colorOnTertiary">@color/shana_onTertiary</item>
+		<item name="colorTertiaryContainer">@color/shana_tertiaryContainer</item>
+		<item name="colorOnTertiaryContainer">@color/shana_onTertiaryContainer</item>
+		<item name="colorError">@color/shana_error</item>
+		<item name="colorOnError">@color/shana_onError</item>
+		<item name="colorErrorContainer">@color/shana_errorContainer</item>
+		<item name="colorOnErrorContainer">@color/shana_onErrorContainer</item>
+		<item name="android:colorBackground">@color/shana_background</item>
+		<item name="colorOnBackground">@color/shana_onBackground</item>
+		<item name="colorSurface">@color/shana_surface</item>
+		<item name="colorOnSurface">@color/shana_onSurface</item>
+		<item name="colorSurfaceVariant">@color/shana_surfaceVariant</item>
+		<item name="colorOnSurfaceVariant">@color/shana_onSurfaceVariant</item>
+		<item name="colorOutline">@color/shana_outline</item>
+		<item name="colorOutlineVariant">@color/shana_outlineVariant</item>
+		<item name="colorSurfaceInverse">@color/shana_inverseSurface</item>
+		<item name="colorOnSurfaceInverse">@color/shana_inverseOnSurface</item>
+		<item name="colorPrimaryInverse">@color/shana_inversePrimary</item>
+		<item name="colorPrimaryFixed">@color/shana_primaryFixed</item>
+		<item name="colorOnPrimaryFixed">@color/shana_onPrimaryFixed</item>
+		<item name="colorPrimaryFixedDim">@color/shana_primaryFixedDim</item>
+		<item name="colorOnPrimaryFixedVariant">@color/shana_onPrimaryFixedVariant</item>
+		<item name="colorSecondaryFixed">@color/shana_secondaryFixed</item>
+		<item name="colorOnSecondaryFixed">@color/shana_onSecondaryFixed</item>
+		<item name="colorSecondaryFixedDim">@color/shana_secondaryFixedDim</item>
+		<item name="colorOnSecondaryFixedVariant">@color/shana_onSecondaryFixedVariant</item>
+		<item name="colorTertiaryFixed">@color/shana_tertiaryFixed</item>
+		<item name="colorOnTertiaryFixed">@color/shana_onTertiaryFixed</item>
+		<item name="colorTertiaryFixedDim">@color/shana_tertiaryFixedDim</item>
+		<item name="colorOnTertiaryFixedVariant">@color/shana_onTertiaryFixedVariant</item>
+		<item name="colorSurfaceDim">@color/shana_surfaceDim</item>
+		<item name="colorSurfaceBright">@color/shana_surfaceBright</item>
+		<item name="colorSurfaceContainerLowest">@color/shana_surfaceContainerLowest</item>
+		<item name="colorSurfaceContainerLow">@color/shana_surfaceContainerLow</item>
+		<item name="colorSurfaceContainer">@color/shana_surfaceContainer</item>
+		<item name="colorSurfaceContainerHigh">@color/shana_surfaceContainerHigh</item>
+		<item name="colorSurfaceContainerHighest">@color/shana_surfaceContainerHighest</item>
+	</style>
+	<!-- Lime -->
+	<style name="ThemeOverlay.Kotatsu.Lime">
+		<item name="colorPrimary">@color/lime_primary</item>
+		<item name="colorOnPrimary">@color/lime_onPrimary</item>
+		<item name="colorPrimaryContainer">@color/lime_primaryContainer</item>
+		<item name="colorOnPrimaryContainer">@color/lime_onPrimaryContainer</item>
+		<item name="colorSecondary">@color/lime_secondary</item>
+		<item name="colorOnSecondary">@color/lime_onSecondary</item>
+		<item name="colorSecondaryContainer">@color/lime_secondaryContainer</item>
+		<item name="colorOnSecondaryContainer">@color/lime_onSecondaryContainer</item>
+		<item name="colorTertiary">@color/lime_tertiary</item>
+		<item name="colorOnTertiary">@color/lime_onTertiary</item>
+		<item name="colorTertiaryContainer">@color/lime_tertiaryContainer</item>
+		<item name="colorOnTertiaryContainer">@color/lime_onTertiaryContainer</item>
+		<item name="colorError">@color/lime_error</item>
+		<item name="colorOnError">@color/lime_onError</item>
+		<item name="colorErrorContainer">@color/lime_errorContainer</item>
+		<item name="colorOnErrorContainer">@color/lime_onErrorContainer</item>
+		<item name="android:colorBackground">@color/lime_background</item>
+		<item name="colorOnBackground">@color/lime_onBackground</item>
+		<item name="colorSurface">@color/lime_surface</item>
+		<item name="colorOnSurface">@color/lime_onSurface</item>
+		<item name="colorSurfaceVariant">@color/lime_surfaceVariant</item>
+		<item name="colorOnSurfaceVariant">@color/lime_onSurfaceVariant</item>
+		<item name="colorOutline">@color/lime_outline</item>
+		<item name="colorOutlineVariant">@color/lime_outlineVariant</item>
+		<item name="colorSurfaceInverse">@color/lime_inverseSurface</item>
+		<item name="colorOnSurfaceInverse">@color/lime_inverseOnSurface</item>
+		<item name="colorPrimaryInverse">@color/lime_inversePrimary</item>
+		<item name="colorPrimaryFixed">@color/lime_primaryFixed</item>
+		<item name="colorOnPrimaryFixed">@color/lime_onPrimaryFixed</item>
+		<item name="colorPrimaryFixedDim">@color/lime_primaryFixedDim</item>
+		<item name="colorOnPrimaryFixedVariant">@color/lime_onPrimaryFixedVariant</item>
+		<item name="colorSecondaryFixed">@color/lime_secondaryFixed</item>
+		<item name="colorOnSecondaryFixed">@color/lime_onSecondaryFixed</item>
+		<item name="colorSecondaryFixedDim">@color/lime_secondaryFixedDim</item>
+		<item name="colorOnSecondaryFixedVariant">@color/lime_onSecondaryFixedVariant</item>
+		<item name="colorTertiaryFixed">@color/lime_tertiaryFixed</item>
+		<item name="colorOnTertiaryFixed">@color/lime_onTertiaryFixed</item>
+		<item name="colorTertiaryFixedDim">@color/lime_tertiaryFixedDim</item>
+		<item name="colorOnTertiaryFixedVariant">@color/lime_onTertiaryFixedVariant</item>
+		<item name="colorSurfaceDim">@color/lime_surfaceDim</item>
+		<item name="colorSurfaceBright">@color/lime_surfaceBright</item>
+		<item name="colorSurfaceContainerLowest">@color/lime_surfaceContainerLowest</item>
+		<item name="colorSurfaceContainerLow">@color/lime_surfaceContainerLow</item>
+		<item name="colorSurfaceContainer">@color/lime_surfaceContainer</item>
+		<item name="colorSurfaceContainerHigh">@color/lime_surfaceContainerHigh</item>
+		<item name="colorSurfaceContainerHighest">@color/lime_surfaceContainerHighest</item>
+	</style>
+	<!-- Amber -->
+	<style name="ThemeOverlay.Kotatsu.Amber">
+		<item name="colorPrimary">@color/amber_primary</item>
+		<item name="colorOnPrimary">@color/amber_onPrimary</item>
+		<item name="colorPrimaryContainer">@color/amber_primaryContainer</item>
+		<item name="colorOnPrimaryContainer">@color/amber_onPrimaryContainer</item>
+		<item name="colorSecondary">@color/amber_secondary</item>
+		<item name="colorOnSecondary">@color/amber_onSecondary</item>
+		<item name="colorSecondaryContainer">@color/amber_secondaryContainer</item>
+		<item name="colorOnSecondaryContainer">@color/amber_onSecondaryContainer</item>
+		<item name="colorTertiary">@color/amber_tertiary</item>
+		<item name="colorOnTertiary">@color/amber_onTertiary</item>
+		<item name="colorTertiaryContainer">@color/amber_tertiaryContainer</item>
+		<item name="colorOnTertiaryContainer">@color/amber_onTertiaryContainer</item>
+		<item name="colorError">@color/amber_error</item>
+		<item name="colorOnError">@color/amber_onError</item>
+		<item name="colorErrorContainer">@color/amber_errorContainer</item>
+		<item name="colorOnErrorContainer">@color/amber_onErrorContainer</item>
+		<item name="android:colorBackground">@color/amber_background</item>
+		<item name="colorOnBackground">@color/amber_onBackground</item>
+		<item name="colorSurface">@color/amber_surface</item>
+		<item name="colorOnSurface">@color/amber_onSurface</item>
+		<item name="colorSurfaceVariant">@color/amber_surfaceVariant</item>
+		<item name="colorOnSurfaceVariant">@color/amber_onSurfaceVariant</item>
+		<item name="colorOutline">@color/amber_outline</item>
+		<item name="colorOutlineVariant">@color/amber_outlineVariant</item>
+		<item name="colorSurfaceInverse">@color/amber_inverseSurface</item>
+		<item name="colorOnSurfaceInverse">@color/amber_inverseOnSurface</item>
+		<item name="colorPrimaryInverse">@color/amber_inversePrimary</item>
+		<item name="colorPrimaryFixed">@color/amber_primaryFixed</item>
+		<item name="colorOnPrimaryFixed">@color/amber_onPrimaryFixed</item>
+		<item name="colorPrimaryFixedDim">@color/amber_primaryFixedDim</item>
+		<item name="colorOnPrimaryFixedVariant">@color/amber_onPrimaryFixedVariant</item>
+		<item name="colorSecondaryFixed">@color/amber_secondaryFixed</item>
+		<item name="colorOnSecondaryFixed">@color/amber_onSecondaryFixed</item>
+		<item name="colorSecondaryFixedDim">@color/amber_secondaryFixedDim</item>
+		<item name="colorOnSecondaryFixedVariant">@color/amber_onSecondaryFixedVariant</item>
+		<item name="colorTertiaryFixed">@color/amber_tertiaryFixed</item>
+		<item name="colorOnTertiaryFixed">@color/amber_onTertiaryFixed</item>
+		<item name="colorTertiaryFixedDim">@color/amber_tertiaryFixedDim</item>
+		<item name="colorOnTertiaryFixedVariant">@color/amber_onTertiaryFixedVariant</item>
+		<item name="colorSurfaceDim">@color/amber_surfaceDim</item>
+		<item name="colorSurfaceBright">@color/amber_surfaceBright</item>
+		<item name="colorSurfaceContainerLowest">@color/amber_surfaceContainerLowest</item>
+		<item name="colorSurfaceContainerLow">@color/amber_surfaceContainerLow</item>
+		<item name="colorSurfaceContainer">@color/amber_surfaceContainer</item>
+		<item name="colorSurfaceContainerHigh">@color/amber_surfaceContainerHigh</item>
+		<item name="colorSurfaceContainerHighest">@color/amber_surfaceContainerHighest</item>
+	</style>
+	<!-- Sky -->
+	<style name="ThemeOverlay.Kotatsu.Sky">
+		<item name="colorPrimary">@color/sky_primary</item>
+		<item name="colorOnPrimary">@color/sky_onPrimary</item>
+		<item name="colorPrimaryContainer">@color/sky_primaryContainer</item>
+		<item name="colorOnPrimaryContainer">@color/sky_onPrimaryContainer</item>
+		<item name="colorSecondary">@color/sky_secondary</item>
+		<item name="colorOnSecondary">@color/sky_onSecondary</item>
+		<item name="colorSecondaryContainer">@color/sky_secondaryContainer</item>
+		<item name="colorOnSecondaryContainer">@color/sky_onSecondaryContainer</item>
+		<item name="colorTertiary">@color/sky_tertiary</item>
+		<item name="colorOnTertiary">@color/sky_onTertiary</item>
+		<item name="colorTertiaryContainer">@color/sky_tertiaryContainer</item>
+		<item name="colorOnTertiaryContainer">@color/sky_onTertiaryContainer</item>
+		<item name="colorError">@color/sky_error</item>
+		<item name="colorOnError">@color/sky_onError</item>
+		<item name="colorErrorContainer">@color/sky_errorContainer</item>
+		<item name="colorOnErrorContainer">@color/sky_onErrorContainer</item>
+		<item name="android:colorBackground">@color/sky_background</item>
+		<item name="colorOnBackground">@color/sky_onBackground</item>
+		<item name="colorSurface">@color/sky_surface</item>
+		<item name="colorOnSurface">@color/sky_onSurface</item>
+		<item name="colorSurfaceVariant">@color/sky_surfaceVariant</item>
+		<item name="colorOnSurfaceVariant">@color/sky_onSurfaceVariant</item>
+		<item name="colorOutline">@color/sky_outline</item>
+		<item name="colorOutlineVariant">@color/sky_outlineVariant</item>
+		<item name="colorSurfaceInverse">@color/sky_inverseSurface</item>
+		<item name="colorOnSurfaceInverse">@color/sky_inverseOnSurface</item>
+		<item name="colorPrimaryInverse">@color/sky_inversePrimary</item>
+		<item name="colorPrimaryFixed">@color/sky_primaryFixed</item>
+		<item name="colorOnPrimaryFixed">@color/sky_onPrimaryFixed</item>
+		<item name="colorPrimaryFixedDim">@color/sky_primaryFixedDim</item>
+		<item name="colorOnPrimaryFixedVariant">@color/sky_onPrimaryFixedVariant</item>
+		<item name="colorSecondaryFixed">@color/sky_secondaryFixed</item>
+		<item name="colorOnSecondaryFixed">@color/sky_onSecondaryFixed</item>
+		<item name="colorSecondaryFixedDim">@color/sky_secondaryFixedDim</item>
+		<item name="colorOnSecondaryFixedVariant">@color/sky_onSecondaryFixedVariant</item>
+		<item name="colorTertiaryFixed">@color/sky_tertiaryFixed</item>
+		<item name="colorOnTertiaryFixed">@color/sky_onTertiaryFixed</item>
+		<item name="colorTertiaryFixedDim">@color/sky_tertiaryFixedDim</item>
+		<item name="colorOnTertiaryFixedVariant">@color/sky_onTertiaryFixedVariant</item>
+		<item name="colorSurfaceDim">@color/sky_surfaceDim</item>
+		<item name="colorSurfaceBright">@color/sky_surfaceBright</item>
+		<item name="colorSurfaceContainerLowest">@color/sky_surfaceContainerLowest</item>
+		<item name="colorSurfaceContainerLow">@color/sky_surfaceContainerLow</item>
+		<item name="colorSurfaceContainer">@color/sky_surfaceContainer</item>
+		<item name="colorSurfaceContainerHigh">@color/sky_surfaceContainerHigh</item>
+		<item name="colorSurfaceContainerHighest">@color/sky_surfaceContainerHighest</item>
+	</style>
+
+	<!-- Theme families: every Material colour scheme restyled with the family corner scale -->
+	<!-- Totoro Classic -->
+	<style name="ThemeOverlay.Kotatsu.Totoro_Classic">
+		<item name="colorPrimary">@color/labtotoro_primary</item>
+		<item name="colorOnPrimary">@color/labtotoro_onPrimary</item>
+		<item name="colorPrimaryContainer">@color/labtotoro_primaryContainer</item>
+		<item name="colorOnPrimaryContainer">@color/labtotoro_onPrimaryContainer</item>
+		<item name="colorSecondary">@color/labtotoro_secondary</item>
+		<item name="colorOnSecondary">@color/labtotoro_onSecondary</item>
+		<item name="colorSecondaryContainer">@color/labtotoro_secondaryContainer</item>
+		<item name="colorOnSecondaryContainer">@color/labtotoro_onSecondaryContainer</item>
+		<item name="colorTertiary">@color/labtotoro_tertiary</item>
+		<item name="colorOnTertiary">@color/labtotoro_onTertiary</item>
+		<item name="colorTertiaryContainer">@color/labtotoro_tertiaryContainer</item>
+		<item name="colorOnTertiaryContainer">@color/labtotoro_onTertiaryContainer</item>
+		<item name="colorError">@color/labtotoro_error</item>
+		<item name="colorOnError">@color/labtotoro_onError</item>
+		<item name="colorErrorContainer">@color/labtotoro_errorContainer</item>
+		<item name="colorOnErrorContainer">@color/labtotoro_onErrorContainer</item>
+		<item name="android:colorBackground">@color/labtotoro_background</item>
+		<item name="colorOnBackground">@color/labtotoro_onBackground</item>
+		<item name="colorSurface">@color/labtotoro_surface</item>
+		<item name="colorOnSurface">@color/labtotoro_onSurface</item>
+		<item name="colorSurfaceVariant">@color/labtotoro_surfaceVariant</item>
+		<item name="colorOnSurfaceVariant">@color/labtotoro_onSurfaceVariant</item>
+		<item name="colorOutline">@color/labtotoro_outline</item>
+		<item name="colorOutlineVariant">@color/labtotoro_outlineVariant</item>
+		<item name="colorSurfaceInverse">@color/labtotoro_inverseSurface</item>
+		<item name="colorOnSurfaceInverse">@color/labtotoro_inverseOnSurface</item>
+		<item name="colorPrimaryInverse">@color/labtotoro_inversePrimary</item>
+		<item name="colorPrimaryFixed">@color/labtotoro_primaryFixed</item>
+		<item name="colorOnPrimaryFixed">@color/labtotoro_onPrimaryFixed</item>
+		<item name="colorPrimaryFixedDim">@color/labtotoro_primaryFixedDim</item>
+		<item name="colorOnPrimaryFixedVariant">@color/labtotoro_onPrimaryFixedVariant</item>
+		<item name="colorSecondaryFixed">@color/labtotoro_secondaryFixed</item>
+		<item name="colorOnSecondaryFixed">@color/labtotoro_onSecondaryFixed</item>
+		<item name="colorSecondaryFixedDim">@color/labtotoro_secondaryFixedDim</item>
+		<item name="colorOnSecondaryFixedVariant">@color/labtotoro_onSecondaryFixedVariant</item>
+		<item name="colorTertiaryFixed">@color/labtotoro_tertiaryFixed</item>
+		<item name="colorOnTertiaryFixed">@color/labtotoro_onTertiaryFixed</item>
+		<item name="colorTertiaryFixedDim">@color/labtotoro_tertiaryFixedDim</item>
+		<item name="colorOnTertiaryFixedVariant">@color/labtotoro_onTertiaryFixedVariant</item>
+		<item name="colorSurfaceDim">@color/labtotoro_surfaceDim</item>
+		<item name="colorSurfaceBright">@color/labtotoro_surfaceBright</item>
+		<item name="colorSurfaceContainerLowest">@color/labtotoro_surfaceContainerLowest</item>
+		<item name="colorSurfaceContainerLow">@color/labtotoro_surfaceContainerLow</item>
+		<item name="colorSurfaceContainer">@color/labtotoro_surfaceContainer</item>
+		<item name="colorSurfaceContainerHigh">@color/labtotoro_surfaceContainerHigh</item>
+		<item name="colorSurfaceContainerHighest">@color/labtotoro_surfaceContainerHighest</item>
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Totoro.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Totoro.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Totoro.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Totoro_Totoro" parent="ThemeOverlay.Kotatsu.Totoro">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Totoro.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Totoro.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Totoro.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Totoro_Miku" parent="ThemeOverlay.Kotatsu.Miku">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Totoro.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Totoro.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Totoro.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Totoro_Asuka" parent="ThemeOverlay.Kotatsu.Asuka">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Totoro.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Totoro.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Totoro.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Totoro_Mion" parent="ThemeOverlay.Kotatsu.Mion">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Totoro.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Totoro.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Totoro.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Totoro_Rikka" parent="ThemeOverlay.Kotatsu.Rikka">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Totoro.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Totoro.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Totoro.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Totoro_Sakura" parent="ThemeOverlay.Kotatsu.Sakura">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Totoro.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Totoro.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Totoro.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Totoro_Mamimi" parent="ThemeOverlay.Kotatsu.Mamimi">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Totoro.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Totoro.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Totoro.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Totoro_Kanade" parent="ThemeOverlay.Kotatsu.Kanade">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Totoro.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Totoro.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Totoro.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Totoro_Itsuka" parent="ThemeOverlay.Kotatsu.Itsuka">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Totoro.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Totoro.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Totoro.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Totoro_Shana" parent="ThemeOverlay.Kotatsu.Shana">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Totoro.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Totoro.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Totoro.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Totoro_Lime" parent="ThemeOverlay.Kotatsu.Lime">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Totoro.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Totoro.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Totoro.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Totoro_Amber" parent="ThemeOverlay.Kotatsu.Amber">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Totoro.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Totoro.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Totoro.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Totoro_Sky" parent="ThemeOverlay.Kotatsu.Sky">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Totoro.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Totoro.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Totoro.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<!-- Terminal Classic -->
+	<style name="ThemeOverlay.Kotatsu.Terminal_Classic">
+		<item name="colorPrimary">@color/labterminal_primary</item>
+		<item name="colorOnPrimary">@color/labterminal_onPrimary</item>
+		<item name="colorPrimaryContainer">@color/labterminal_primaryContainer</item>
+		<item name="colorOnPrimaryContainer">@color/labterminal_onPrimaryContainer</item>
+		<item name="colorSecondary">@color/labterminal_secondary</item>
+		<item name="colorOnSecondary">@color/labterminal_onSecondary</item>
+		<item name="colorSecondaryContainer">@color/labterminal_secondaryContainer</item>
+		<item name="colorOnSecondaryContainer">@color/labterminal_onSecondaryContainer</item>
+		<item name="colorTertiary">@color/labterminal_tertiary</item>
+		<item name="colorOnTertiary">@color/labterminal_onTertiary</item>
+		<item name="colorTertiaryContainer">@color/labterminal_tertiaryContainer</item>
+		<item name="colorOnTertiaryContainer">@color/labterminal_onTertiaryContainer</item>
+		<item name="colorError">@color/labterminal_error</item>
+		<item name="colorOnError">@color/labterminal_onError</item>
+		<item name="colorErrorContainer">@color/labterminal_errorContainer</item>
+		<item name="colorOnErrorContainer">@color/labterminal_onErrorContainer</item>
+		<item name="android:colorBackground">@color/labterminal_background</item>
+		<item name="colorOnBackground">@color/labterminal_onBackground</item>
+		<item name="colorSurface">@color/labterminal_surface</item>
+		<item name="colorOnSurface">@color/labterminal_onSurface</item>
+		<item name="colorSurfaceVariant">@color/labterminal_surfaceVariant</item>
+		<item name="colorOnSurfaceVariant">@color/labterminal_onSurfaceVariant</item>
+		<item name="colorOutline">@color/labterminal_outline</item>
+		<item name="colorOutlineVariant">@color/labterminal_outlineVariant</item>
+		<item name="colorSurfaceInverse">@color/labterminal_inverseSurface</item>
+		<item name="colorOnSurfaceInverse">@color/labterminal_inverseOnSurface</item>
+		<item name="colorPrimaryInverse">@color/labterminal_inversePrimary</item>
+		<item name="colorPrimaryFixed">@color/labterminal_primaryFixed</item>
+		<item name="colorOnPrimaryFixed">@color/labterminal_onPrimaryFixed</item>
+		<item name="colorPrimaryFixedDim">@color/labterminal_primaryFixedDim</item>
+		<item name="colorOnPrimaryFixedVariant">@color/labterminal_onPrimaryFixedVariant</item>
+		<item name="colorSecondaryFixed">@color/labterminal_secondaryFixed</item>
+		<item name="colorOnSecondaryFixed">@color/labterminal_onSecondaryFixed</item>
+		<item name="colorSecondaryFixedDim">@color/labterminal_secondaryFixedDim</item>
+		<item name="colorOnSecondaryFixedVariant">@color/labterminal_onSecondaryFixedVariant</item>
+		<item name="colorTertiaryFixed">@color/labterminal_tertiaryFixed</item>
+		<item name="colorOnTertiaryFixed">@color/labterminal_onTertiaryFixed</item>
+		<item name="colorTertiaryFixedDim">@color/labterminal_tertiaryFixedDim</item>
+		<item name="colorOnTertiaryFixedVariant">@color/labterminal_onTertiaryFixedVariant</item>
+		<item name="colorSurfaceDim">@color/labterminal_surfaceDim</item>
+		<item name="colorSurfaceBright">@color/labterminal_surfaceBright</item>
+		<item name="colorSurfaceContainerLowest">@color/labterminal_surfaceContainerLowest</item>
+		<item name="colorSurfaceContainerLow">@color/labterminal_surfaceContainerLow</item>
+		<item name="colorSurfaceContainer">@color/labterminal_surfaceContainer</item>
+		<item name="colorSurfaceContainerHigh">@color/labterminal_surfaceContainerHigh</item>
+		<item name="colorSurfaceContainerHighest">@color/labterminal_surfaceContainerHighest</item>
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Terminal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Terminal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Terminal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Terminal_Totoro" parent="ThemeOverlay.Kotatsu.Totoro">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Terminal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Terminal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Terminal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Terminal_Miku" parent="ThemeOverlay.Kotatsu.Miku">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Terminal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Terminal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Terminal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Terminal_Asuka" parent="ThemeOverlay.Kotatsu.Asuka">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Terminal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Terminal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Terminal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Terminal_Mion" parent="ThemeOverlay.Kotatsu.Mion">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Terminal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Terminal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Terminal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Terminal_Rikka" parent="ThemeOverlay.Kotatsu.Rikka">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Terminal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Terminal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Terminal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Terminal_Sakura" parent="ThemeOverlay.Kotatsu.Sakura">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Terminal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Terminal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Terminal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Terminal_Mamimi" parent="ThemeOverlay.Kotatsu.Mamimi">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Terminal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Terminal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Terminal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Terminal_Kanade" parent="ThemeOverlay.Kotatsu.Kanade">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Terminal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Terminal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Terminal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Terminal_Itsuka" parent="ThemeOverlay.Kotatsu.Itsuka">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Terminal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Terminal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Terminal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Terminal_Shana" parent="ThemeOverlay.Kotatsu.Shana">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Terminal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Terminal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Terminal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Terminal_Lime" parent="ThemeOverlay.Kotatsu.Lime">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Terminal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Terminal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Terminal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Terminal_Amber" parent="ThemeOverlay.Kotatsu.Amber">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Terminal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Terminal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Terminal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Terminal_Sky" parent="ThemeOverlay.Kotatsu.Sky">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Terminal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Terminal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Terminal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<!-- Broadsheet Classic -->
+	<style name="ThemeOverlay.Kotatsu.Broadsheet_Classic">
+		<item name="colorPrimary">@color/labbroadsheet_primary</item>
+		<item name="colorOnPrimary">@color/labbroadsheet_onPrimary</item>
+		<item name="colorPrimaryContainer">@color/labbroadsheet_primaryContainer</item>
+		<item name="colorOnPrimaryContainer">@color/labbroadsheet_onPrimaryContainer</item>
+		<item name="colorSecondary">@color/labbroadsheet_secondary</item>
+		<item name="colorOnSecondary">@color/labbroadsheet_onSecondary</item>
+		<item name="colorSecondaryContainer">@color/labbroadsheet_secondaryContainer</item>
+		<item name="colorOnSecondaryContainer">@color/labbroadsheet_onSecondaryContainer</item>
+		<item name="colorTertiary">@color/labbroadsheet_tertiary</item>
+		<item name="colorOnTertiary">@color/labbroadsheet_onTertiary</item>
+		<item name="colorTertiaryContainer">@color/labbroadsheet_tertiaryContainer</item>
+		<item name="colorOnTertiaryContainer">@color/labbroadsheet_onTertiaryContainer</item>
+		<item name="colorError">@color/labbroadsheet_error</item>
+		<item name="colorOnError">@color/labbroadsheet_onError</item>
+		<item name="colorErrorContainer">@color/labbroadsheet_errorContainer</item>
+		<item name="colorOnErrorContainer">@color/labbroadsheet_onErrorContainer</item>
+		<item name="android:colorBackground">@color/labbroadsheet_background</item>
+		<item name="colorOnBackground">@color/labbroadsheet_onBackground</item>
+		<item name="colorSurface">@color/labbroadsheet_surface</item>
+		<item name="colorOnSurface">@color/labbroadsheet_onSurface</item>
+		<item name="colorSurfaceVariant">@color/labbroadsheet_surfaceVariant</item>
+		<item name="colorOnSurfaceVariant">@color/labbroadsheet_onSurfaceVariant</item>
+		<item name="colorOutline">@color/labbroadsheet_outline</item>
+		<item name="colorOutlineVariant">@color/labbroadsheet_outlineVariant</item>
+		<item name="colorSurfaceInverse">@color/labbroadsheet_inverseSurface</item>
+		<item name="colorOnSurfaceInverse">@color/labbroadsheet_inverseOnSurface</item>
+		<item name="colorPrimaryInverse">@color/labbroadsheet_inversePrimary</item>
+		<item name="colorPrimaryFixed">@color/labbroadsheet_primaryFixed</item>
+		<item name="colorOnPrimaryFixed">@color/labbroadsheet_onPrimaryFixed</item>
+		<item name="colorPrimaryFixedDim">@color/labbroadsheet_primaryFixedDim</item>
+		<item name="colorOnPrimaryFixedVariant">@color/labbroadsheet_onPrimaryFixedVariant</item>
+		<item name="colorSecondaryFixed">@color/labbroadsheet_secondaryFixed</item>
+		<item name="colorOnSecondaryFixed">@color/labbroadsheet_onSecondaryFixed</item>
+		<item name="colorSecondaryFixedDim">@color/labbroadsheet_secondaryFixedDim</item>
+		<item name="colorOnSecondaryFixedVariant">@color/labbroadsheet_onSecondaryFixedVariant</item>
+		<item name="colorTertiaryFixed">@color/labbroadsheet_tertiaryFixed</item>
+		<item name="colorOnTertiaryFixed">@color/labbroadsheet_onTertiaryFixed</item>
+		<item name="colorTertiaryFixedDim">@color/labbroadsheet_tertiaryFixedDim</item>
+		<item name="colorOnTertiaryFixedVariant">@color/labbroadsheet_onTertiaryFixedVariant</item>
+		<item name="colorSurfaceDim">@color/labbroadsheet_surfaceDim</item>
+		<item name="colorSurfaceBright">@color/labbroadsheet_surfaceBright</item>
+		<item name="colorSurfaceContainerLowest">@color/labbroadsheet_surfaceContainerLowest</item>
+		<item name="colorSurfaceContainerLow">@color/labbroadsheet_surfaceContainerLow</item>
+		<item name="colorSurfaceContainer">@color/labbroadsheet_surfaceContainer</item>
+		<item name="colorSurfaceContainerHigh">@color/labbroadsheet_surfaceContainerHigh</item>
+		<item name="colorSurfaceContainerHighest">@color/labbroadsheet_surfaceContainerHighest</item>
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Broadsheet_Totoro" parent="ThemeOverlay.Kotatsu.Totoro">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Broadsheet_Miku" parent="ThemeOverlay.Kotatsu.Miku">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Broadsheet_Asuka" parent="ThemeOverlay.Kotatsu.Asuka">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Broadsheet_Mion" parent="ThemeOverlay.Kotatsu.Mion">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Broadsheet_Rikka" parent="ThemeOverlay.Kotatsu.Rikka">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Broadsheet_Sakura" parent="ThemeOverlay.Kotatsu.Sakura">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Broadsheet_Mamimi" parent="ThemeOverlay.Kotatsu.Mamimi">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Broadsheet_Kanade" parent="ThemeOverlay.Kotatsu.Kanade">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Broadsheet_Itsuka" parent="ThemeOverlay.Kotatsu.Itsuka">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Broadsheet_Shana" parent="ThemeOverlay.Kotatsu.Shana">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Broadsheet_Lime" parent="ThemeOverlay.Kotatsu.Lime">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Broadsheet_Amber" parent="ThemeOverlay.Kotatsu.Amber">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Broadsheet_Sky" parent="ThemeOverlay.Kotatsu.Sky">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Broadsheet.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<!-- Arcade Classic -->
+	<style name="ThemeOverlay.Kotatsu.Arcade_Classic">
+		<item name="colorPrimary">@color/labarcade_primary</item>
+		<item name="colorOnPrimary">@color/labarcade_onPrimary</item>
+		<item name="colorPrimaryContainer">@color/labarcade_primaryContainer</item>
+		<item name="colorOnPrimaryContainer">@color/labarcade_onPrimaryContainer</item>
+		<item name="colorSecondary">@color/labarcade_secondary</item>
+		<item name="colorOnSecondary">@color/labarcade_onSecondary</item>
+		<item name="colorSecondaryContainer">@color/labarcade_secondaryContainer</item>
+		<item name="colorOnSecondaryContainer">@color/labarcade_onSecondaryContainer</item>
+		<item name="colorTertiary">@color/labarcade_tertiary</item>
+		<item name="colorOnTertiary">@color/labarcade_onTertiary</item>
+		<item name="colorTertiaryContainer">@color/labarcade_tertiaryContainer</item>
+		<item name="colorOnTertiaryContainer">@color/labarcade_onTertiaryContainer</item>
+		<item name="colorError">@color/labarcade_error</item>
+		<item name="colorOnError">@color/labarcade_onError</item>
+		<item name="colorErrorContainer">@color/labarcade_errorContainer</item>
+		<item name="colorOnErrorContainer">@color/labarcade_onErrorContainer</item>
+		<item name="android:colorBackground">@color/labarcade_background</item>
+		<item name="colorOnBackground">@color/labarcade_onBackground</item>
+		<item name="colorSurface">@color/labarcade_surface</item>
+		<item name="colorOnSurface">@color/labarcade_onSurface</item>
+		<item name="colorSurfaceVariant">@color/labarcade_surfaceVariant</item>
+		<item name="colorOnSurfaceVariant">@color/labarcade_onSurfaceVariant</item>
+		<item name="colorOutline">@color/labarcade_outline</item>
+		<item name="colorOutlineVariant">@color/labarcade_outlineVariant</item>
+		<item name="colorSurfaceInverse">@color/labarcade_inverseSurface</item>
+		<item name="colorOnSurfaceInverse">@color/labarcade_inverseOnSurface</item>
+		<item name="colorPrimaryInverse">@color/labarcade_inversePrimary</item>
+		<item name="colorPrimaryFixed">@color/labarcade_primaryFixed</item>
+		<item name="colorOnPrimaryFixed">@color/labarcade_onPrimaryFixed</item>
+		<item name="colorPrimaryFixedDim">@color/labarcade_primaryFixedDim</item>
+		<item name="colorOnPrimaryFixedVariant">@color/labarcade_onPrimaryFixedVariant</item>
+		<item name="colorSecondaryFixed">@color/labarcade_secondaryFixed</item>
+		<item name="colorOnSecondaryFixed">@color/labarcade_onSecondaryFixed</item>
+		<item name="colorSecondaryFixedDim">@color/labarcade_secondaryFixedDim</item>
+		<item name="colorOnSecondaryFixedVariant">@color/labarcade_onSecondaryFixedVariant</item>
+		<item name="colorTertiaryFixed">@color/labarcade_tertiaryFixed</item>
+		<item name="colorOnTertiaryFixed">@color/labarcade_onTertiaryFixed</item>
+		<item name="colorTertiaryFixedDim">@color/labarcade_tertiaryFixedDim</item>
+		<item name="colorOnTertiaryFixedVariant">@color/labarcade_onTertiaryFixedVariant</item>
+		<item name="colorSurfaceDim">@color/labarcade_surfaceDim</item>
+		<item name="colorSurfaceBright">@color/labarcade_surfaceBright</item>
+		<item name="colorSurfaceContainerLowest">@color/labarcade_surfaceContainerLowest</item>
+		<item name="colorSurfaceContainerLow">@color/labarcade_surfaceContainerLow</item>
+		<item name="colorSurfaceContainer">@color/labarcade_surfaceContainer</item>
+		<item name="colorSurfaceContainerHigh">@color/labarcade_surfaceContainerHigh</item>
+		<item name="colorSurfaceContainerHighest">@color/labarcade_surfaceContainerHighest</item>
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Arcade.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Arcade.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Arcade.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Arcade_Totoro" parent="ThemeOverlay.Kotatsu.Totoro">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Arcade.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Arcade.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Arcade.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Arcade_Miku" parent="ThemeOverlay.Kotatsu.Miku">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Arcade.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Arcade.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Arcade.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Arcade_Asuka" parent="ThemeOverlay.Kotatsu.Asuka">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Arcade.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Arcade.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Arcade.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Arcade_Mion" parent="ThemeOverlay.Kotatsu.Mion">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Arcade.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Arcade.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Arcade.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Arcade_Rikka" parent="ThemeOverlay.Kotatsu.Rikka">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Arcade.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Arcade.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Arcade.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Arcade_Sakura" parent="ThemeOverlay.Kotatsu.Sakura">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Arcade.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Arcade.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Arcade.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Arcade_Mamimi" parent="ThemeOverlay.Kotatsu.Mamimi">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Arcade.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Arcade.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Arcade.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Arcade_Kanade" parent="ThemeOverlay.Kotatsu.Kanade">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Arcade.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Arcade.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Arcade.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Arcade_Itsuka" parent="ThemeOverlay.Kotatsu.Itsuka">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Arcade.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Arcade.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Arcade.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Arcade_Shana" parent="ThemeOverlay.Kotatsu.Shana">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Arcade.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Arcade.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Arcade.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Arcade_Lime" parent="ThemeOverlay.Kotatsu.Lime">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Arcade.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Arcade.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Arcade.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Arcade_Amber" parent="ThemeOverlay.Kotatsu.Amber">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Arcade.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Arcade.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Arcade.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Arcade_Sky" parent="ThemeOverlay.Kotatsu.Sky">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Arcade.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Arcade.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Arcade.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<!-- Sakura Classic -->
+	<style name="ThemeOverlay.Kotatsu.Sakura_Classic">
+		<item name="colorPrimary">@color/labsakura_primary</item>
+		<item name="colorOnPrimary">@color/labsakura_onPrimary</item>
+		<item name="colorPrimaryContainer">@color/labsakura_primaryContainer</item>
+		<item name="colorOnPrimaryContainer">@color/labsakura_onPrimaryContainer</item>
+		<item name="colorSecondary">@color/labsakura_secondary</item>
+		<item name="colorOnSecondary">@color/labsakura_onSecondary</item>
+		<item name="colorSecondaryContainer">@color/labsakura_secondaryContainer</item>
+		<item name="colorOnSecondaryContainer">@color/labsakura_onSecondaryContainer</item>
+		<item name="colorTertiary">@color/labsakura_tertiary</item>
+		<item name="colorOnTertiary">@color/labsakura_onTertiary</item>
+		<item name="colorTertiaryContainer">@color/labsakura_tertiaryContainer</item>
+		<item name="colorOnTertiaryContainer">@color/labsakura_onTertiaryContainer</item>
+		<item name="colorError">@color/labsakura_error</item>
+		<item name="colorOnError">@color/labsakura_onError</item>
+		<item name="colorErrorContainer">@color/labsakura_errorContainer</item>
+		<item name="colorOnErrorContainer">@color/labsakura_onErrorContainer</item>
+		<item name="android:colorBackground">@color/labsakura_background</item>
+		<item name="colorOnBackground">@color/labsakura_onBackground</item>
+		<item name="colorSurface">@color/labsakura_surface</item>
+		<item name="colorOnSurface">@color/labsakura_onSurface</item>
+		<item name="colorSurfaceVariant">@color/labsakura_surfaceVariant</item>
+		<item name="colorOnSurfaceVariant">@color/labsakura_onSurfaceVariant</item>
+		<item name="colorOutline">@color/labsakura_outline</item>
+		<item name="colorOutlineVariant">@color/labsakura_outlineVariant</item>
+		<item name="colorSurfaceInverse">@color/labsakura_inverseSurface</item>
+		<item name="colorOnSurfaceInverse">@color/labsakura_inverseOnSurface</item>
+		<item name="colorPrimaryInverse">@color/labsakura_inversePrimary</item>
+		<item name="colorPrimaryFixed">@color/labsakura_primaryFixed</item>
+		<item name="colorOnPrimaryFixed">@color/labsakura_onPrimaryFixed</item>
+		<item name="colorPrimaryFixedDim">@color/labsakura_primaryFixedDim</item>
+		<item name="colorOnPrimaryFixedVariant">@color/labsakura_onPrimaryFixedVariant</item>
+		<item name="colorSecondaryFixed">@color/labsakura_secondaryFixed</item>
+		<item name="colorOnSecondaryFixed">@color/labsakura_onSecondaryFixed</item>
+		<item name="colorSecondaryFixedDim">@color/labsakura_secondaryFixedDim</item>
+		<item name="colorOnSecondaryFixedVariant">@color/labsakura_onSecondaryFixedVariant</item>
+		<item name="colorTertiaryFixed">@color/labsakura_tertiaryFixed</item>
+		<item name="colorOnTertiaryFixed">@color/labsakura_onTertiaryFixed</item>
+		<item name="colorTertiaryFixedDim">@color/labsakura_tertiaryFixedDim</item>
+		<item name="colorOnTertiaryFixedVariant">@color/labsakura_onTertiaryFixedVariant</item>
+		<item name="colorSurfaceDim">@color/labsakura_surfaceDim</item>
+		<item name="colorSurfaceBright">@color/labsakura_surfaceBright</item>
+		<item name="colorSurfaceContainerLowest">@color/labsakura_surfaceContainerLowest</item>
+		<item name="colorSurfaceContainerLow">@color/labsakura_surfaceContainerLow</item>
+		<item name="colorSurfaceContainer">@color/labsakura_surfaceContainer</item>
+		<item name="colorSurfaceContainerHigh">@color/labsakura_surfaceContainerHigh</item>
+		<item name="colorSurfaceContainerHighest">@color/labsakura_surfaceContainerHighest</item>
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Sakura.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Sakura.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Sakura.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Sakura_Totoro" parent="ThemeOverlay.Kotatsu.Totoro">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Sakura.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Sakura.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Sakura.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Sakura_Miku" parent="ThemeOverlay.Kotatsu.Miku">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Sakura.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Sakura.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Sakura.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Sakura_Asuka" parent="ThemeOverlay.Kotatsu.Asuka">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Sakura.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Sakura.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Sakura.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Sakura_Mion" parent="ThemeOverlay.Kotatsu.Mion">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Sakura.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Sakura.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Sakura.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Sakura_Rikka" parent="ThemeOverlay.Kotatsu.Rikka">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Sakura.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Sakura.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Sakura.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Sakura_Sakura" parent="ThemeOverlay.Kotatsu.Sakura">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Sakura.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Sakura.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Sakura.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Sakura_Mamimi" parent="ThemeOverlay.Kotatsu.Mamimi">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Sakura.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Sakura.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Sakura.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Sakura_Kanade" parent="ThemeOverlay.Kotatsu.Kanade">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Sakura.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Sakura.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Sakura.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Sakura_Itsuka" parent="ThemeOverlay.Kotatsu.Itsuka">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Sakura.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Sakura.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Sakura.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Sakura_Shana" parent="ThemeOverlay.Kotatsu.Shana">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Sakura.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Sakura.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Sakura.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Sakura_Lime" parent="ThemeOverlay.Kotatsu.Lime">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Sakura.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Sakura.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Sakura.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Sakura_Amber" parent="ThemeOverlay.Kotatsu.Amber">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Sakura.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Sakura.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Sakura.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Sakura_Sky" parent="ThemeOverlay.Kotatsu.Sky">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Sakura.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Sakura.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Sakura.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<!-- Brutal Classic -->
+	<style name="ThemeOverlay.Kotatsu.Brutal_Classic">
+		<item name="colorPrimary">@color/labbrutal_primary</item>
+		<item name="colorOnPrimary">@color/labbrutal_onPrimary</item>
+		<item name="colorPrimaryContainer">@color/labbrutal_primaryContainer</item>
+		<item name="colorOnPrimaryContainer">@color/labbrutal_onPrimaryContainer</item>
+		<item name="colorSecondary">@color/labbrutal_secondary</item>
+		<item name="colorOnSecondary">@color/labbrutal_onSecondary</item>
+		<item name="colorSecondaryContainer">@color/labbrutal_secondaryContainer</item>
+		<item name="colorOnSecondaryContainer">@color/labbrutal_onSecondaryContainer</item>
+		<item name="colorTertiary">@color/labbrutal_tertiary</item>
+		<item name="colorOnTertiary">@color/labbrutal_onTertiary</item>
+		<item name="colorTertiaryContainer">@color/labbrutal_tertiaryContainer</item>
+		<item name="colorOnTertiaryContainer">@color/labbrutal_onTertiaryContainer</item>
+		<item name="colorError">@color/labbrutal_error</item>
+		<item name="colorOnError">@color/labbrutal_onError</item>
+		<item name="colorErrorContainer">@color/labbrutal_errorContainer</item>
+		<item name="colorOnErrorContainer">@color/labbrutal_onErrorContainer</item>
+		<item name="android:colorBackground">@color/labbrutal_background</item>
+		<item name="colorOnBackground">@color/labbrutal_onBackground</item>
+		<item name="colorSurface">@color/labbrutal_surface</item>
+		<item name="colorOnSurface">@color/labbrutal_onSurface</item>
+		<item name="colorSurfaceVariant">@color/labbrutal_surfaceVariant</item>
+		<item name="colorOnSurfaceVariant">@color/labbrutal_onSurfaceVariant</item>
+		<item name="colorOutline">@color/labbrutal_outline</item>
+		<item name="colorOutlineVariant">@color/labbrutal_outlineVariant</item>
+		<item name="colorSurfaceInverse">@color/labbrutal_inverseSurface</item>
+		<item name="colorOnSurfaceInverse">@color/labbrutal_inverseOnSurface</item>
+		<item name="colorPrimaryInverse">@color/labbrutal_inversePrimary</item>
+		<item name="colorPrimaryFixed">@color/labbrutal_primaryFixed</item>
+		<item name="colorOnPrimaryFixed">@color/labbrutal_onPrimaryFixed</item>
+		<item name="colorPrimaryFixedDim">@color/labbrutal_primaryFixedDim</item>
+		<item name="colorOnPrimaryFixedVariant">@color/labbrutal_onPrimaryFixedVariant</item>
+		<item name="colorSecondaryFixed">@color/labbrutal_secondaryFixed</item>
+		<item name="colorOnSecondaryFixed">@color/labbrutal_onSecondaryFixed</item>
+		<item name="colorSecondaryFixedDim">@color/labbrutal_secondaryFixedDim</item>
+		<item name="colorOnSecondaryFixedVariant">@color/labbrutal_onSecondaryFixedVariant</item>
+		<item name="colorTertiaryFixed">@color/labbrutal_tertiaryFixed</item>
+		<item name="colorOnTertiaryFixed">@color/labbrutal_onTertiaryFixed</item>
+		<item name="colorTertiaryFixedDim">@color/labbrutal_tertiaryFixedDim</item>
+		<item name="colorOnTertiaryFixedVariant">@color/labbrutal_onTertiaryFixedVariant</item>
+		<item name="colorSurfaceDim">@color/labbrutal_surfaceDim</item>
+		<item name="colorSurfaceBright">@color/labbrutal_surfaceBright</item>
+		<item name="colorSurfaceContainerLowest">@color/labbrutal_surfaceContainerLowest</item>
+		<item name="colorSurfaceContainerLow">@color/labbrutal_surfaceContainerLow</item>
+		<item name="colorSurfaceContainer">@color/labbrutal_surfaceContainer</item>
+		<item name="colorSurfaceContainerHigh">@color/labbrutal_surfaceContainerHigh</item>
+		<item name="colorSurfaceContainerHighest">@color/labbrutal_surfaceContainerHighest</item>
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Brutal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Brutal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Brutal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Brutal_Totoro" parent="ThemeOverlay.Kotatsu.Totoro">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Brutal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Brutal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Brutal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Brutal_Miku" parent="ThemeOverlay.Kotatsu.Miku">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Brutal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Brutal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Brutal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Brutal_Asuka" parent="ThemeOverlay.Kotatsu.Asuka">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Brutal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Brutal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Brutal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Brutal_Mion" parent="ThemeOverlay.Kotatsu.Mion">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Brutal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Brutal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Brutal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Brutal_Rikka" parent="ThemeOverlay.Kotatsu.Rikka">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Brutal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Brutal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Brutal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Brutal_Sakura" parent="ThemeOverlay.Kotatsu.Sakura">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Brutal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Brutal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Brutal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Brutal_Mamimi" parent="ThemeOverlay.Kotatsu.Mamimi">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Brutal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Brutal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Brutal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Brutal_Kanade" parent="ThemeOverlay.Kotatsu.Kanade">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Brutal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Brutal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Brutal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Brutal_Itsuka" parent="ThemeOverlay.Kotatsu.Itsuka">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Brutal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Brutal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Brutal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Brutal_Shana" parent="ThemeOverlay.Kotatsu.Shana">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Brutal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Brutal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Brutal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Brutal_Lime" parent="ThemeOverlay.Kotatsu.Lime">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Brutal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Brutal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Brutal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Brutal_Amber" parent="ThemeOverlay.Kotatsu.Amber">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Brutal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Brutal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Brutal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+	<style name="ThemeOverlay.Kotatsu.Brutal_Sky" parent="ThemeOverlay.Kotatsu.Sky">
+		<item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Kotatsu.Family.Brutal.Small</item>
+		<item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.Kotatsu.Family.Brutal.Medium</item>
+		<item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Kotatsu.Family.Brutal.Large</item>
+		<item name="materialCardViewStyle">@style/Widget.Kotatsu.CardView.Translucent</item>
+		<item name="appBarLayoutStyle">@style/Widget.Kotatsu.AppBarLayout.Themed</item>
+		<item name="collapsingToolbarLayoutStyle">@style/Widget.Kotatsu.CollapsingToolbar.Themed</item>
+		<item name="collapsingToolbarLayoutMediumStyle">@style/Widget.Kotatsu.CollapsingToolbar.Medium.Themed</item>
+		<item name="collapsingToolbarLayoutLargeStyle">@style/Widget.Kotatsu.CollapsingToolbar.Large.Themed</item>
+	</style>
+</resources>
